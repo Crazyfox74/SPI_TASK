@@ -1,0 +1,8 @@
+../Src/storage/storage.c:120:21:storage_get_tail	32	static
+../Src/storage/storage.c:42:21:storage_init	8	static
+../Src/storage/storage.c:111:21:storage_read	16	static
+../Src/storage/storage.c:151:10:FLASH_EraseSector	0	static
+../Src/storage/storage.c:21:21:flash_sectorErase	8	static
+../Src/storage/storage.c:171:10:FLASH_ProgramSectionByLongs	12	static
+../Src/storage/storage.c:31:21:flash_dataWrite	16	static
+../Src/storage/storage.c:67:21:storage_write	16	static

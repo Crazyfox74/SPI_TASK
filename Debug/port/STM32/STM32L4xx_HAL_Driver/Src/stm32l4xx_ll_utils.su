@@ -1,0 +1,9 @@
+../port/STM32/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.c:618:20:UTILS_SetFlashLatency	0	static
+../port/STM32/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.c:749:17:UTILS_GetPLLOutputFrequency	0	static
+../port/STM32/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.c:821:20:UTILS_EnablePLLAndSwitchSystem	16	static
+../port/STM32/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.c:186:6:LL_Init1msTick	0	static
+../port/STM32/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.c:202:6:LL_mDelay	8	static
+../port/STM32/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.c:294:6:LL_SetSystemCoreClock	0	static
+../port/STM32/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.c:316:13:LL_PLL_ConfigSystemClock_MSI	16	static
+../port/STM32/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.c:442:13:LL_PLL_ConfigSystemClock_HSI	16	static
+../port/STM32/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.c:523:13:LL_PLL_ConfigSystemClock_HSE	16	static

@@ -1,0 +1,2 @@
+../Src/utils/crc16_ccit.c:38:10:crc16_ccit	4	static
+../Src/utils/crc16_ccit.c:45:10:ml_CRC16	4	static

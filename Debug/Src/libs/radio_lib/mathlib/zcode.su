@@ -1,0 +1,2 @@
+../Src/libs/radio_lib/mathlib/zcode.c:20:6:ZCODE_Append	80	static
+../Src/libs/radio_lib/mathlib/zcode.c:48:6:ZIGZAG_Append	80	static

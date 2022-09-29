@@ -1,0 +1,11 @@
+../Src/storage/gasLogs_storage.c:37:6:gasLogs_erasePage	0	static
+../Src/storage/gasLogs_storage.c:32:10:gasLogs_getTimeStamp	0	static
+../Src/storage/gasLogs_storage.c:34:13:gasLogs_getVolume	0	static
+../Src/storage/gasLogs_storage.c:35:10:gasLogs_getErrorDays	0	static
+../Src/storage/gasLogs_storage.c:38:6:gasLogs_isEventErasePage	0	static
+../Src/storage/gasLogs_storage.c:48:6:gasLogs_writeInFlash	16	static
+../Src/storage/gasLogs_storage.c:60:6:gasLogs_getFromFlash	8	static
+../Src/storage/gasLogs_storage.c:73:6:gasLogs_getExtInfo	0	static
+../Src/storage/gasLogs_storage.c:85:10:gasLogs_checkRecord	16	static
+../Src/storage/gasLogs_storage.c:102:6:gasLogs_save	16	static
+../Src/storage/gasLogs_storage.c:122:6:gasLogs_init	24	static

@@ -1,0 +1,2 @@
+../Src/perif/clock.c:26:6:hse_init	16	static
+../Src/perif/clock.c:54:6:clock_init	16	static

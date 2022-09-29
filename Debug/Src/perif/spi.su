@@ -1,0 +1,7 @@
+../Src/perif/spi.c:152:6:SpiInit	16	static,ignoring_inline_asm
+../Src/perif/spi.c:197:6:SpiDeinit	8	static
+../Src/perif/spi.c:214:6:SpiSendRecv	4	static
+../Src/perif/spi.c:245:6:SpiBreak	8	static
+../Src/perif/spi.c:266:6:SpiSetPrescaler	0	static
+../Src/perif/spi.c:271:17:SpiIsReady	0	static
+../Src/perif/spi.c:277:6:SPI1_IRQHandler	16	static

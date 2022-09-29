@@ -1,0 +1,11 @@
+../Src/perif/spiFlash.c:44:6:spiFlash_init	0	static,ignoring_inline_asm
+../Src/perif/spiFlash.c:53:6:spiFlash_deinit	0	static,ignoring_inline_asm
+../Src/perif/spiFlash.c:61:6:spiFlash_powerOn	8	static,ignoring_inline_asm
+../Src/perif/spiFlash.c:71:6:spiFlash_powerDown	8	static
+../Src/perif/spiFlash.c:80:6:spiFlash_setCS	0	static
+../Src/perif/spiFlash.c:93:6:spiFlash_read	32	static
+../Src/perif/spiFlash.c:186:9:spiFlash_readStatus	16	static
+../Src/perif/spiFlash.c:211:9:spiFlash_wrtEnbl	16	static
+../Src/perif/spiFlash.c:125:9:spiFlash_write	32	static
+../Src/perif/spiFlash.c:254:10:spiFlash_readJEDECDesc	32	static
+../Src/perif/spiFlash.c:286:9:spiFlash_eraseSector	16	static

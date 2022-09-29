@@ -1,0 +1,1642 @@
+Archive member included to satisfy reference by file (symbol)
+
+D:\2021_1\Cube\mm215_gcc\port\STM32\CMSIS\Lib\GCC\libarm_cortexM4lf_math.a(arm_fir_f32.o)
+                              ./Src/flow/phase.o (symbol from plugin) (arm_fir_f32)
+D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+                              ./Src/main.o (symbol from plugin) (BL_Table_Func)
+D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+                              D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o) (FLASH_Initialization_rom)
+D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+                              D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o) (BL_memcpy)
+D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+                              ./Src/libs/boot/ext/bl_vectors.o (BL_ISR)
+D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+                              D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o) (ncp_doCmd)
+D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+                              D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o) (ncp_do_WHOIS)
+D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+                              D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o) (DecodeBuf)
+D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+                              D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o) (FLASH_ProgramLongWord_base)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-exit.o)
+                              c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (exit)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+                              c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-exit.o) (_global_impure_ptr)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-init.o)
+                              c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (__libc_init_array)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+                              c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (memset)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(_exit.o)
+                              c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-exit.o) (_exit)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_round.o)
+                              ./Src/flow/gmm_manager.o (symbol from plugin) (roundf)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-wf_atan2.o)
+                              ./Src/flow/phase.o (symbol from plugin) (atan2f)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-wf_sqrt.o)
+                              ./Src/flow/phase.o (symbol from plugin) (sqrtf)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-ef_atan2.o)
+                              c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-wf_atan2.o) (__ieee754_atan2f)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-ef_sqrt.o)
+                              c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-wf_sqrt.o) (__ieee754_sqrtf)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_atan.o)
+                              c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-ef_atan2.o) (atanf)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_fabs.o)
+                              c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-ef_atan2.o) (fabsf)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+                              C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o (__aeabi_dmul)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+                              C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o (__aeabi_dsub)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+                              C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o (__aeabi_ddiv)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+                              C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o (__aeabi_dcmplt)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixdfsi.o)
+                              C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o (__aeabi_d2iz)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
+                              C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o (__aeabi_d2uiz)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+                              C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o (__aeabi_d2f)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+                              C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans1.ltrans.o (__aeabi_uldivmod)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                              c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o) (__udivmoddi4)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+                              c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o) (__aeabi_ldiv0)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-errno.o)
+                              c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-wf_sqrt.o) (__errno)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcmp.o)
+                              C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o (memcmp)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+                              C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o (memcpy)
+c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memmove.o)
+                              C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o (memmove)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+ .data          0x0000000000000000        0x4 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .rodata        0x0000000000000000       0x24 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .text          0x0000000000000000       0x7c c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.exidx     0x0000000000000000       0x10 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.attributes
+                0x0000000000000000       0x1c c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .text          0x0000000000000000        0x4 ./Src/libs/boot/ext/bl_vectors.o
+ .data          0x0000000000000000        0x0 ./Src/libs/boot/ext/bl_vectors.o
+ .bss           0x0000000000000000        0x0 ./Src/libs/boot/ext/bl_vectors.o
+ .text          0x0000000000000000       0x14 ./port/STM32/startup_stm32l412cbtx.o
+ .data          0x0000000000000000        0x0 ./port/STM32/startup_stm32l412cbtx.o
+ .bss           0x0000000000000000        0x0 ./port/STM32/startup_stm32l412cbtx.o
+ .text          0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\port\STM32\CMSIS\Lib\GCC\libarm_cortexM4lf_math.a(arm_fir_f32.o)
+ .data          0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\port\STM32\CMSIS\Lib\GCC\libarm_cortexM4lf_math.a(arm_fir_f32.o)
+ .bss           0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\port\STM32\CMSIS\Lib\GCC\libarm_cortexM4lf_math.a(arm_fir_f32.o)
+ .text.arm_fir_f32
+                0x0000000000000000      0x500 D:\2021_1\Cube\mm215_gcc\port\STM32\CMSIS\Lib\GCC\libarm_cortexM4lf_math.a(arm_fir_f32.o)
+ .debug_info    0x0000000000000000      0xd48 D:\2021_1\Cube\mm215_gcc\port\STM32\CMSIS\Lib\GCC\libarm_cortexM4lf_math.a(arm_fir_f32.o)
+ .debug_abbrev  0x0000000000000000      0x215 D:\2021_1\Cube\mm215_gcc\port\STM32\CMSIS\Lib\GCC\libarm_cortexM4lf_math.a(arm_fir_f32.o)
+ .debug_loc     0x0000000000000000      0xc2f D:\2021_1\Cube\mm215_gcc\port\STM32\CMSIS\Lib\GCC\libarm_cortexM4lf_math.a(arm_fir_f32.o)
+ .debug_aranges
+                0x0000000000000000       0x20 D:\2021_1\Cube\mm215_gcc\port\STM32\CMSIS\Lib\GCC\libarm_cortexM4lf_math.a(arm_fir_f32.o)
+ .debug_ranges  0x0000000000000000       0x10 D:\2021_1\Cube\mm215_gcc\port\STM32\CMSIS\Lib\GCC\libarm_cortexM4lf_math.a(arm_fir_f32.o)
+ .debug_line    0x0000000000000000      0x8a0 D:\2021_1\Cube\mm215_gcc\port\STM32\CMSIS\Lib\GCC\libarm_cortexM4lf_math.a(arm_fir_f32.o)
+ .debug_str     0x0000000000000000      0x6e8 D:\2021_1\Cube\mm215_gcc\port\STM32\CMSIS\Lib\GCC\libarm_cortexM4lf_math.a(arm_fir_f32.o)
+ .comment       0x0000000000000000       0x76 D:\2021_1\Cube\mm215_gcc\port\STM32\CMSIS\Lib\GCC\libarm_cortexM4lf_math.a(arm_fir_f32.o)
+ .debug_frame   0x0000000000000000       0x98 D:\2021_1\Cube\mm215_gcc\port\STM32\CMSIS\Lib\GCC\libarm_cortexM4lf_math.a(arm_fir_f32.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 D:\2021_1\Cube\mm215_gcc\port\STM32\CMSIS\Lib\GCC\libarm_cortexM4lf_math.a(arm_fir_f32.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .text          0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .data          0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .bss           0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .text          0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .data          0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .bss           0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000      0xa6c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000       0x22 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000       0x8e D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000       0x51 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000      0x103 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000       0x6a D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000      0x1df D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000       0x40 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000       0x28 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000       0x28 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000       0x3b D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000       0x2d D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000       0x42 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000      0xd39 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000     0xad2f D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000       0x43 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000       0x34 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000       0x4c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000       0x29 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000       0x76 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000      0x174 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000      0x125 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x0000000000000000       0x16 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .text          0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .data          0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .bss           0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000      0xa6c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000       0x22 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000       0x8e D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000       0x51 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000      0x103 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000       0x6a D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000      0x1df D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000       0x40 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000       0x29 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000       0x28 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000       0x28 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000       0x3b D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000       0x2d D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000       0x42 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000      0xd39 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000     0xad2f D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000       0x43 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000       0x34 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000       0x4c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000       0x76 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000      0x174 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000      0x125 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x0000000000000000       0x16 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .text          0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .data          0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .bss           0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000      0xa6c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000       0x22 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000       0x8e D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000       0x51 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000      0x103 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000       0x6a D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000      0x1df D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000       0x40 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000       0x76 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000       0x28 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000       0x28 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000       0x3b D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000       0x2d D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000       0x42 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000      0xd39 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000     0xad2f D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000       0x43 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000       0x34 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000       0x29 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000      0x174 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000      0x125 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000       0x10 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x0000000000000000       0x16 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .text          0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .data          0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .bss           0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000      0xa6c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000       0x22 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000       0x8e D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000       0x51 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000      0x103 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000       0x6a D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000      0x1df D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000       0x40 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000      0x174 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000       0x29 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000       0x28 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000       0x28 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000       0x3b D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000       0x2d D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000       0x42 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000      0xd39 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000     0xad2f D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000       0x43 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000       0x34 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000       0x4c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000       0x76 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000      0x125 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000       0x28 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x0000000000000000       0x16 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .text          0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .data          0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .bss           0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000      0xa6c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000       0x22 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000       0x8e D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000       0x51 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000      0x103 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000       0x6a D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000      0x1df D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000       0x40 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000       0x29 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000       0x28 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000       0x28 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000       0x3b D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000       0x2d D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000       0x42 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000      0xd39 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000     0xad2f D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000       0x43 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000       0x34 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000       0x4c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000       0x76 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000      0x174 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000      0x125 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000       0x22 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000       0x2e D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000       0x10 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000       0x34 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x0000000000000000       0x16 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .text          0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .data          0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .bss           0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000      0xa6c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000       0x22 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000       0x8e D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000       0x51 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000      0x103 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000       0x6a D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000      0x1df D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000       0x40 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000       0x29 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000       0x28 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000       0x28 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000       0x3b D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000       0x2d D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000       0x42 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000      0xd39 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000     0xad2f D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000       0x43 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000       0x34 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000       0x4c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000       0x76 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000      0x174 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000      0x125 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x0000000000000000       0x16 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .group         0x0000000000000000        0xc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .text          0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .data          0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .bss           0x0000000000000000        0x0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000      0xa6c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000       0x22 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000       0x8e D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000       0x51 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000      0x103 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000       0x6a D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000      0x1df D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000       0x40 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000       0x28 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000       0x28 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000       0x3b D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000       0x2d D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000       0x42 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000      0xd39 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000     0xad2f D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000       0x43 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000       0x34 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000       0x4c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000       0x29 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000       0x76 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000      0x174 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000      0x125 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_macro   0x0000000000000000       0x16 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-exit.o)
+ .text.exit     0x0000000000000000       0x28 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000000       0x28 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-exit.o)
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x0000000000000000        0x4 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-init.o)
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-errno.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-errno.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-errno.o)
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcmp.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcmp.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcmp.o)
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memmove.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memmove.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memmove.o)
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(_exit.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(_exit.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(_exit.o)
+ .text._exit    0x0000000000000000        0x2 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(_exit.o)
+ .debug_frame   0x0000000000000000       0x20 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(_exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(_exit.o)
+ .text          0x0000000000000000      0x254 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .debug_frame   0x0000000000000000       0x30 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .ARM.attributes
+                0x0000000000000000       0x1e c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixdfsi.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixdfsi.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .ARM.extab     0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .rodata        0x0000000000000000       0x24 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .eh_frame      0x0000000000000000        0x4 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .ARM.attributes
+                0x0000000000000000       0x34 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_round.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_round.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_round.o)
+ .debug_frame   0x0000000000000000       0x20 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_round.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_round.o)
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-wf_atan2.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-wf_atan2.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-wf_atan2.o)
+ .debug_frame   0x0000000000000000       0x20 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-wf_atan2.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-wf_atan2.o)
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-wf_sqrt.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-wf_sqrt.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-wf_sqrt.o)
+ .debug_frame   0x0000000000000000       0x38 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-wf_sqrt.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-wf_sqrt.o)
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-ef_atan2.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-ef_atan2.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-ef_atan2.o)
+ .debug_frame   0x0000000000000000       0x30 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-ef_atan2.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-ef_atan2.o)
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-ef_sqrt.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-ef_sqrt.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-ef_sqrt.o)
+ .debug_frame   0x0000000000000000       0x20 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-ef_sqrt.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-ef_sqrt.o)
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_atan.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_atan.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_atan.o)
+ .debug_frame   0x0000000000000000       0x2c c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_atan.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_atan.o)
+ .text          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_fabs.o)
+ .data          0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_fabs.o)
+ .bss           0x0000000000000000        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_fabs.o)
+ .debug_frame   0x0000000000000000       0x20 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_fabs.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_fabs.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x0000000020000000 0x0000000000009c00 xrw
+SRAM2            0x0000000010000000 0x0000000000001c00 xrw
+RAM_BAT          0x0000000020009c00 0x0000000000000400 rw
+BL_FLASH         0x0000000008000000 0x0000000000003000 xr
+FLASH            0x0000000008003000 0x000000000001d000 xr
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+LOAD c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+LOAD c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+LOAD ./Src/config.o
+LOAD C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o
+LOAD C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans1.ltrans.o
+LOAD ./Src/main.o
+LOAD ./Src/flow/adc.o
+LOAD ./Src/flow/approx_correct.o
+LOAD ./Src/flow/gmm_manager.o
+LOAD ./Src/flow/gmm_storage.o
+LOAD ./Src/flow/kalman.o
+LOAD ./Src/flow/phase.o
+LOAD ./Src/flow/queue.o
+LOAD ./Src/flow/sequencer.o
+LOAD ./Src/flow/zero_offset.o
+LOAD ./Src/gui/LCD_ML1001.o
+LOAD ./Src/gui/LCD_ML1001_interface.o
+LOAD ./Src/gui/finger.o
+LOAD ./Src/gui/gui.o
+LOAD ./Src/gui/gui_hal.o
+LOAD ./Src/gui/led.o
+LOAD ./Src/gui/tsc.o
+LOAD ./Src/libs/axsem/axsem_platdefs.o
+LOAD ./Src/libs/axsem/code/ax5043.o
+LOAD ./Src/libs/axsem/code/ax5043_sw_freqw.o
+LOAD ./Src/libs/axsem/code/axtrx.o
+LOAD ./Src/libs/boot/bl_user/archive_user.o
+LOAD ./Src/libs/boot/bl_user/bl_AppUser.o
+LOAD ./Src/libs/boot/bl_user/bl_archive_user.o
+LOAD ./Src/libs/boot/bl_user/bl_key_table.o
+LOAD ./Src/libs/boot/bl_user/bl_user.o
+LOAD ./Src/libs/boot/bl_user/bl_user_func_table.o
+LOAD ./Src/libs/boot/ext/bl_vectors.o
+LOAD ./Src/libs/radio_lib/mathlib/aes.o
+LOAD ./Src/libs/radio_lib/mathlib/crc.o
+LOAD ./Src/libs/radio_lib/mathlib/xtea.o
+LOAD ./Src/libs/radio_lib/mathlib/zcode.o
+LOAD ./Src/libs/radio_lib/nbfi.o
+LOAD ./Src/libs/radio_lib/r6k7.o
+LOAD ./Src/libs/radio_lib/sdc.o
+LOAD ./Src/libs/ufifo/ufifo.o
+LOAD ./Src/ncp_ex/ncp_ex.o
+LOAD ./Src/perif/adc_sens.o
+LOAD ./Src/perif/clock.o
+LOAD ./Src/perif/rtc.o
+LOAD ./Src/perif/spi.o
+LOAD ./Src/perif/spiFlash.o
+LOAD ./Src/perif/uart.o
+LOAD ./Src/radio/SpiManager.o
+LOAD ./Src/radio/TimerManager.o
+LOAD ./Src/radio/radio.o
+LOAD ./Src/radio/water5_proto.o
+LOAD ./Src/storage/eventLogs_storage.o
+LOAD ./Src/storage/gasLogs_storage.o
+LOAD ./Src/storage/sigfox_storage.o
+LOAD ./Src/storage/storage.o
+LOAD ./Src/tests/slip.o
+LOAD ./Src/tests/test.o
+LOAD ./Src/utils/crc16_ccit.o
+LOAD ./Src/utils/errors.o
+LOAD ./Src/utils/hardfault.o
+LOAD ./Src/utils/service.o
+LOAD ./Src/utils/sleep.o
+LOAD ./Src/utils/time_trckng.o
+LOAD ./Src/utils/tm_seconds_to_date.o
+LOAD ./Src/utils/uart_prot.o
+LOAD ./Src/utils/uart_prot_new.o
+LOAD ./port/STM32/CMSIS/Src/system_stm32l4xx.o
+LOAD ./port/STM32/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.o
+LOAD ./port/STM32/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_spi.o
+LOAD ./port/STM32/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.o
+LOAD ./port/STM32/startup_stm32l412cbtx.o
+LOAD D:\2021_1\Cube\mm215_gcc\port\STM32\CMSIS\Lib\GCC\libarm_cortexM4lf_math.a
+LOAD D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a
+START GROUP
+LOAD c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a
+LOAD c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a
+LOAD c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
+LOAD c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a
+END GROUP
+START GROUP
+LOAD c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a
+LOAD c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
+LOAD c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a
+END GROUP
+LOAD c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+LOAD c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x0000000020009bf8                _estack = ((ORIGIN (RAM) + LENGTH (RAM)) - 0x8)
+                0x0000000000000200                _Min_Heap_Size = 0x200
+                0x0000000000000400                _Min_Stack_Size = 0x400
+                0x0000000020009bf8                __STACK_ADDRESS = _estack
+                0x0000000000000800                __FL_PROG_PAGE_SZ = 0x800
+                0x0000000000003000                __BOOT_SZ = 0x3000
+                0x0000000008003000                __APP_OFFSET = __intvec_start__
+                0x0000000000002800                __BOOT_ROM_SZ = (__BOOT_SZ - __FL_PROG_PAGE_SZ)
+                0x0000000000000140                _BL_RAMFUN_SIZE__ = 0x140
+                0x0000000000000010                BL_DATA_SIZE__ = 0x10
+                0x0000000020000000                __BL_RAM_USER_start__ = __region_RAM_BL_ramfunc_start__
+                0x00000000200007ff                __BL_RAM_USER_end__ = ((__BL_RAM_USER_start__ + 0x800) - 0x1)
+                0x0000000020000800                __BL_RAM_BOOT_start__ = (__BL_RAM_USER_end__ + 0x1)
+                0x00000000200017ff                __BL_RAM_BOOT_end__ = ((__BL_RAM_BOOT_start__ + 0x1000) - 0x1)
+                0x0000000008003400                __FlagVerID_start__ = (__APP_OFFSET + 0x400)
+
+.IntVectTable_BL
+                0x0000000008000000      0x1c0
+                0x0000000008000000                IntVectTable_BL_start__ = .
+ *(.IntVectTable_BL)
+ .IntVectTable_BL
+                0x0000000008000000      0x1bc ./Src/libs/boot/ext/bl_vectors.o
+                0x0000000008000000                bl_vector_entry
+                0x00000000080001c0                . = (IntVectTable_BL_start__ + 0x1c0)
+ *fill*         0x00000000080001bc        0x4 
+                0x00000000080001c0                IntVectTable_BL_end__ = .
+
+.Bootloader_KEY
+                0x00000000080001c0       0x80
+                0x00000000080001c0                __KeyTable_start = .
+ *(.Bootloader_KEY)
+ .Bootloader_KEY
+                0x00000000080001c0       0x80 C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans1.ltrans.o
+                0x00000000080001c0                keyConst
+                0x0000000008000240                . = (__KeyTable_start + 0x80)
+                0x0000000008000240                __KeyTable_end = .
+
+.BL_FuncTable   0x0000000008000240       0x70
+                0x0000000008000240                __BL_FuncTable_start = .
+ *(.BL_FuncTable)
+ .BL_FuncTable  0x0000000008000240       0x6c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+                0x0000000008000240                BL_Table_Func
+                0x00000000080002b0                . = (__BL_FuncTable_start + 0x70)
+ *fill*         0x00000000080002ac        0x4 
+                0x00000000080002b0                __BL_FuncTable_end = .
+
+.BL_User_FuncTable
+                0x00000000080002b0       0x30
+                0x00000000080002b0                __BL_User_FuncTable_start = .
+ *(.BL_User_FuncTable)
+ .BL_User_FuncTable
+                0x00000000080002b0        0x4 C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans1.ltrans.o
+                0x00000000080002b0                BL_User_Table_Func
+                0x00000000080002e0                . = (__BL_User_FuncTable_start + 0x30)
+ *fill*         0x00000000080002b4       0x2c 
+                0x00000000080002e0                __BL_User_FuncTable_end = .
+
+.BL_config      0x00000000080002e0       0x20
+                0x00000000080002e0                __BL_Config_start = .
+ *(.BL_config)
+ .BL_config     0x00000000080002e0       0x10 C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans1.ltrans.o
+                0x00000000080002e0                BL_config
+                0x0000000008000300                . = (__BL_Config_start + 0x20)
+ *fill*         0x00000000080002f0       0x10 
+                0x0000000008000300                __BL_Config_end = .
+
+.ROM_BL_CODE_RAM
+                0x0000000008000300      0x168
+                0x0000000008000300                __ROM_BL_CODE_RAM_start__ = .
+ *(.ROM_BL_CODE_RAM)
+ .ROM_BL_CODE_RAM
+                0x0000000008000300      0x168 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+                0x0000000008000300                FLASH_ProgramLongWord_base
+                0x0000000008000358                FLASH_ProgramSectionByLongs_base
+                0x00000000080003d8                FLASH_EraseSector_base
+                0x0000000008000468                __ROM_BL_CODE_RAM_end__ = .
+
+.ROM_BL         0x0000000008000468     0x2388
+                0x0000000008000468                __ROM_BL_start__ = .
+ *(.ROM_BL)
+ .ROM_BL        0x0000000008000468      0x2dc C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o
+                0x00000000080004e8                BL_WdtReset
+                0x00000000080004f8                BL_WdtInit
+                0x0000000008000534                BL_User_DisableInterrupts
+                0x000000000800053c                BL_User_EnableInterrupts
+                0x0000000008000544                BL_GetNcpModeTrigger
+                0x0000000008000548                BL_UserISR
+                0x0000000008000578                BL_UserInterfaceProc
+                0x000000000800057e                BL_UserInit
+                0x00000000080006c0                BL_UserFinish
+                0x0000000008000718                BL_UserStatusUpdate
+ .ROM_BL        0x0000000008000744      0x190 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+                0x0000000008000744                FLASH_Initialization_rom
+                0x000000000800078c                FLASH_EraseSector_rom
+                0x00000000080007ec                FLASH_ProgramLongWord_rom
+                0x0000000008000860                FLASH_ProgramSectionByLongs_rom
+ .ROM_BL        0x00000000080008d4      0x200 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+                0x00000000080008d4                BL_memcpy
+                0x00000000080008e8                BL_memset
+                0x000000000800095c                BL_memcmp
+                0x0000000008000978                BL_memcmp32
+                0x00000000080009b4                uread2
+                0x00000000080009cc                uread4
+                0x00000000080009d0                uwrite2
+                0x00000000080009dc                uwrite4
+                0x00000000080009e0                BL_InitCrc32_Table
+                0x0000000008000a18                BL_CalcCrc32_Table
+                0x0000000008000a3c                BL_CalcCrc4_Table
+                0x0000000008000a80                BL_SetBit
+                0x0000000008000aa8                BL_GetBit
+ *fill*         0x0000000008000ad4        0x4 
+ .ROM_BL        0x0000000008000ad8      0x858 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+                0x0000000008000ad8                BL_ISR
+                0x0000000008000afc                BL_ResetMCU
+                0x0000000008000b0c                BL_IsRebootReq
+                0x0000000008000b18                BL_SetNPCAddr
+                0x0000000008000b24                BL_GetBootMode
+                0x0000000008000b30                BL_SetBlockMapBuf
+                0x0000000008000b3c                BL_SetNcpApply
+                0x0000000008000b80                BL_SetArchiveReady
+                0x0000000008000bc8                BL_SetFlagUpdateStarted
+                0x0000000008000c10                BL_GetFlagUpdateStarted
+                0x0000000008000c30                BL_SetFlagNcpBoot
+                0x0000000008000c78                BL_DisableInterrupts
+                0x0000000008000c90                BL_EnableInterrupts
+                0x0000000008000ca8                BL_SetInterruptEnDisFuncs
+                0x0000000008000cb4                BL_SetArchiveAccessFuncs
+                0x0000000008000cc0                BL_SetNcpInitDataReqFunc
+                0x0000000008000ccc                BL_SetNcpUnknownProc
+                0x0000000008000cd8                main_bl
+ .ROM_BL        0x0000000008001330      0x298 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+                0x0000000008001330                ncp_parse
+                0x0000000008001360                ncp_prepareErr
+                0x000000000800137c                ncp_getCRC
+                0x00000000080013d4                ncp_compose
+                0x0000000008001434                ncp_doCmd
+ .ROM_BL        0x00000000080015c8      0xa2c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+                0x00000000080015c8                ncp_do_WHOIS
+                0x00000000080015e4                TaAddEntry
+                0x0000000008001644                TaIsBlockExists
+                0x0000000008001664                TaGetBlockByNumber
+                0x000000000800168c                NCP_get_NumbersLostBlok
+                0x000000000800170c                ncp_do_fu_INTEGR
+                0x0000000008001790                RestoreHash
+                0x00000000080017a8                NCP_InitFlashTables
+                0x0000000008001880                ncp_do_fu_INIT
+                0x0000000008001940                ncp_GetFlagStartBootloader_L
+                0x0000000008001944                Read_ArchiveBlokNum
+                0x000000000800199c                ncp_GetCRC_Data_AllHash
+                0x0000000008001a50                ncp_do_fu_STATUS
+                0x0000000008001afc                ProgramPreparedPage
+                0x0000000008001b88                ncp_do_fu_APPLY
+                0x0000000008001c24                ProgramFirmChunk
+                0x0000000008001d18                ncp_do_fu_DATA
+ .ROM_BL        0x0000000008001ff4      0x110 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+                0x0000000008001ff4                DecodeBuf
+                0x00000000080027f0                . = ((IntVectTable_BL_start__ + 0x2800) - BL_DATA_SIZE__)
+ *fill*         0x0000000008002104      0x6ec 
+                0x00000000080027f0                __ROM_BL_end__ = .
+
+.ROM_BL2        0x00000000080027f0       0x10
+                0x00000000080027f0                __ROM_BL_DATA_start__ = .
+ *(.ROM_BL2)
+ .ROM_BL2       0x00000000080027f0       0x10 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+                0x0000000008002800                . = (__ROM_BL_DATA_start__ + BL_DATA_SIZE__)
+                0x0000000008002800                __ROM_BL_DATA_end__ = .
+
+.LABEL_INIT_FLAGS
+                0x0000000008002800      0x800
+                0x0000000008002800                __NCP_INIT_FLAGS_start__ = .
+ *(.LABEL_INIT_FLAGS)
+ .LABEL_INIT_FLAGS
+                0x0000000008002800       0x38 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+                0x0000000008002800                ncp_init_fls
+                0x0000000008003000                . = (__NCP_INIT_FLAGS_start__ + __FL_PROG_PAGE_SZ)
+ *fill*         0x0000000008002838      0x7c8 
+                0x0000000008003000                __NCP_INIT_FLAGS_end__ = .
+
+.bl_ramfunc     0x0000000020000000      0x140
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                __region_RAM_BL_ramfunc_start__ = .
+ *(.bl_ramfunc)
+                0x0000000020000140                . = (. + _BL_RAMFUN_SIZE__)
+ *fill*         0x0000000020000000      0x140 
+                0x0000000020000140                __region_RAM_BL_ramfunc_end__ = .
+
+.bl_common_ram  0x0000000020000140       0x78
+                0x0000000020000140                . = ALIGN (0x4)
+                0x0000000020000140                __RAM_BL_common_start__ = .
+ *(.bl_common_ram)
+ .bl_common_ram
+                0x0000000020000140       0x78 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+                0x0000000020000140                bl_common_ram
+                0x00000000200001b8                . = ALIGN (0x4)
+                0x00000000200001b8                __RAM_BL_common_end__ = .
+
+.bl_user_common_ram
+                0x00000000200001b8        0x8
+                0x00000000200001b8                . = ALIGN (0x4)
+                0x00000000200001b8                __RAM_BL_user_common_start__ = .
+ *(.bl_user_common_ram)
+                0x00000000200001c0                . = (. + 0x8)
+ *fill*         0x00000000200001b8        0x8 
+                0x00000000200001c0                __RAM_BL_user_common_end__ = .
+
+.intvec_user    0x0000000008003000      0x18c
+                0x0000000008003000                . = ALIGN (0x4)
+                0x0000000008003000                __intvec_start__ = .
+ *(.intvec_user)
+ .intvec_user   0x0000000008003000      0x18c ./port/STM32/startup_stm32l412cbtx.o
+                0x0000000008003000                g_pfnVectors
+                0x000000000800318c                . = ALIGN (0x4)
+
+.text           0x0000000008003190     0xa5e4
+                0x0000000008003190                . = ALIGN (0x4)
+ *(.text)
+ .text          0x0000000008003190       0x40 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .text          0x00000000080031d0     0x7458 C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o
+                0x00000000080034f4                axtrx_CS_set
+                0x000000000800392c                spiFlash_setCS
+                0x000000000800465c                LL_GPIO_SetPinMode.lto_priv.0.lto_priv.0
+                0x000000000800465c                LL_GPIO_SetPinMode.lto_priv.7.lto_priv.0
+                0x00000000080046f8                LL_GPIO_SetPinSpeed.lto_priv.0.lto_priv.0
+                0x0000000008004722                LL_GPIO_SetPinPull.lto_priv.0.lto_priv.0
+                0x0000000008004722                LL_GPIO_SetPinPull.lto_priv.7.lto_priv.0
+                0x000000000800477c                LL_APB2_GRP1_EnableClock.lto_priv.0.lto_priv.0
+                0x000000000800477c                LL_APB2_GRP1_EnableClock.lto_priv.4.lto_priv.0
+                0x0000000008004808                DMA1_Channel1_IRQHandler
+                0x0000000008004858                adc_set_dma_ptr
+                0x0000000008004888                adc_init_conversion
+                0x00000000080048bc                signal_param_init
+                0x0000000008004910                signal_param_set_default.lto_priv.0
+                0x0000000008004980                gmm_manager_get_ringing
+                0x0000000008004ae8                EXTI9_5_IRQHandler
+                0x0000000008004b04                kalman_correct
+                0x0000000008004b5e                queue_push
+                0x0000000008004bfa                DMA1_Channel6_IRQHandler
+                0x0000000008004c4c                pulses_set_dma_ptr.lto_priv.0
+                0x0000000008004c7c                pulses_dma_start.lto_priv.0
+                0x0000000008004ca4                LCD_write_segments.lto_priv.0
+                0x0000000008004e1c                LL_GPIO_SetAFPin_0_7.lto_priv.2.lto_priv.0
+                0x0000000008004e1c                LL_GPIO_SetAFPin_0_7.lto_priv.0.lto_priv.0
+                0x0000000008004f20                LL_GPIO_SetAFPin_8_15.lto_priv.1.lto_priv.0
+                0x0000000008004f20                LL_GPIO_SetAFPin_8_15.lto_priv.0.lto_priv.0
+                0x0000000008004f4c                axsem_SetRdyFlag
+                0x0000000008004fdc                ax5043_proc_isr
+                0x0000000008005340                axsem_supplyTxOff.lto_priv.0.lto_priv.0
+                0x0000000008005370                axsem_supplyRxOff.lto_priv.0.lto_priv.0
+                0x000000000800539c                Timer_CmdTimeout_cb.lto_priv.0
+                0x00000000080053cc                Lock.lto_priv.0.lto_priv.0
+                0x00000000080053cc                Lock.lto_priv.1.lto_priv.0
+                0x0000000008005438                ax5043_WriteReg16.part.0.lto_priv.0
+                0x0000000008005474                RTC_WKUP_IRQHandler
+                0x00000000080054d4                RTC_Alarm_IRQHandler
+                0x0000000008005514                SysTick_Handler
+                0x000000000800552c                systicks_isTimeout
+                0x0000000008005634                SpiSendRecv
+                0x00000000080056e4                SpiSetPrescaler
+                0x0000000008005e9c                SPI1_IRQHandler
+                0x0000000008005f0c                uart_init
+                0x0000000008005f80                putchar
+                0x0000000008005f82                USART1_IRQHandler
+                0x000000000800600c                TimerManagerSort.lto_priv.0
+                0x00000000080060d8                TimerManagerTimerStart
+                0x0000000008006328                TimerManagerTimerStop
+                0x0000000008006be0                SpiManager_OnTimeout.lto_priv.0
+                0x0000000008007424                AxSent_cb
+                0x00000000080074d0                EXTI3_IRQHandler
+                0x00000000080074f4                crc16_ccit
+                0x0000000008007c60                HardFault_Handler
+                0x0000000008007c94                BusFault_Handler
+                0x0000000008007cc8                UsageFault_Handler
+                0x0000000008007cfc                NMI_Handler
+                0x0000000008007d44                LPTIM2_IRQHandler
+                0x0000000008007d70                sleep_deep
+                0x0000000008007f10                re_im_fast.constprop.0
+ .text          0x000000000800a628     0x1124 C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans1.ltrans.o
+                0x000000000800a628                LL_mDelay.constprop.0
+                0x000000000800a648                sequencer_1_run.constprop.0
+                0x000000000800a704                sequencer_2_run.constprop.0
+                0x000000000800a7d8                LCD_write_hex.constprop.0
+                0x000000000800a808                menu_time_out.constprop.0
+                0x000000000800a84c                Encode.constprop.0
+                0x000000000800a8a0                ufifo_UpdateCrc.constprop.0
+                0x000000000800a8c4                ufifo_CheckCrc.constprop.0
+                0x000000000800a8f0                board_gpio_set_output.constprop.0
+                0x000000000800a91e                TimerManagerTimerRewind.constprop.0.isra.0
+                0x000000000800a980                ufifo_pop.constprop.0.isra.0
+                0x000000000800a9d4                LL_SPI_Init.isra.0
+                0x000000000800aa28                ts_to_datetime.isra.0
+                0x000000000800ab44                SpiManagerSendRecvX.isra.0
+                0x000000000800ac24                ax5043_ReadRegN.constprop.0.isra.0
+                0x000000000800ac68                SpiManagerSendRecv.isra.0
+                0x000000000800ad00                uart_write.isra.0
+                0x000000000800ad88                ax5043_SetXtalFreq.isra.0
+                0x000000000800add4                ax5043_WriteReg.isra.0
+                0x000000000800ae18                ax5043_ReadReg.isra.0
+                0x000000000800ae50                ax5043_WriteReg16.isra.0
+                0x000000000800ae88                ax5043_setCmdP.isra.0
+                0x000000000800af0c                ax5043_start.constprop.0.isra.0
+                0x000000000800af50                ax5043_StartTx.constprop.0.isra.0
+                0x000000000800af90                ax5043_StartRx.isra.0
+                0x000000000800afb4                ax5043_WriteRegArray.isra.0
+                0x000000000800afca                ax5043_Fifo_DataCmd.isra.0
+                0x000000000800b038                ax5043_WriteRegN.isra.0
+                0x000000000800b07c                ax5043_push.isra.0
+                0x000000000800b094                queue_get_alfa_w.isra.0
+                0x000000000800b0e0                zero_offset_angle_detect_flow_calc.constprop.0
+                0x000000000800b214                zero_offset_forced_correct.constprop.0
+                0x000000000800b2d0                queue_get_deviation.isra.0
+                0x000000000800b2e8                gmm_search_zero_offset.isra.0
+                0x000000000800b588                app_setTxScheduled.isra.0
+                0x000000000800b5a4                SpiManagerFree.isra.0
+                0x000000000800b62c                ax5043_init.isra.0
+ .text          0x000000000800b74c      0x378 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+                0x000000000800b74c                __aeabi_drsub
+                0x000000000800b754                __aeabi_dsub
+                0x000000000800b754                __subdf3
+                0x000000000800b758                __aeabi_dadd
+                0x000000000800b758                __adddf3
+                0x000000000800b9d0                __floatunsidf
+                0x000000000800b9d0                __aeabi_ui2d
+                0x000000000800b9f0                __floatsidf
+                0x000000000800b9f0                __aeabi_i2d
+                0x000000000800ba14                __aeabi_f2d
+                0x000000000800ba14                __extendsfdf2
+                0x000000000800ba58                __floatundidf
+                0x000000000800ba58                __aeabi_ul2d
+                0x000000000800ba68                __floatdidf
+                0x000000000800ba68                __aeabi_l2d
+ .text          0x000000000800bac4      0x424 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+                0x000000000800bac4                __aeabi_dmul
+                0x000000000800bac4                __muldf3
+                0x000000000800bd18                __divdf3
+                0x000000000800bd18                __aeabi_ddiv
+ .text          0x000000000800bee8      0x110 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+                0x000000000800bee8                __gtdf2
+                0x000000000800bee8                __gedf2
+                0x000000000800bef0                __ltdf2
+                0x000000000800bef0                __ledf2
+                0x000000000800bef8                __nedf2
+                0x000000000800bef8                __eqdf2
+                0x000000000800bef8                __cmpdf2
+                0x000000000800bf74                __aeabi_cdrcmple
+                0x000000000800bf84                __aeabi_cdcmpeq
+                0x000000000800bf84                __aeabi_cdcmple
+                0x000000000800bf94                __aeabi_dcmpeq
+                0x000000000800bfa8                __aeabi_dcmplt
+                0x000000000800bfbc                __aeabi_dcmple
+                0x000000000800bfd0                __aeabi_dcmpge
+                0x000000000800bfe4                __aeabi_dcmpgt
+ .text          0x000000000800bff8       0x50 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixdfsi.o)
+                0x000000000800bff8                __aeabi_d2iz
+                0x000000000800bff8                __fixdfsi
+ .text          0x000000000800c048       0x40 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
+                0x000000000800c048                __aeabi_d2uiz
+                0x000000000800c048                __fixunsdfsi
+ .text          0x000000000800c088       0xa0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+                0x000000000800c088                __truncdfsf2
+                0x000000000800c088                __aeabi_d2f
+ .text          0x000000000800c128       0x30 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+                0x000000000800c128                __aeabi_uldivmod
+ .text          0x000000000800c158      0x2d0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x000000000800c158                __udivmoddi4
+ .text          0x000000000800c428        0x4 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+                0x000000000800c428                __aeabi_idiv0
+                0x000000000800c428                __aeabi_ldiv0
+ *(.text.*)
+ .text.startup  0x000000000800c42c      0xe84 C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o
+                0x000000000800c42c                main
+ .text.Reset_Handler
+                0x000000000800d2b0       0x4c ./port/STM32/startup_stm32l412cbtx.o
+                0x000000000800d2b0                Reset_Handler
+ .text.Default_Handler
+                0x000000000800d2fc        0x2 ./port/STM32/startup_stm32l412cbtx.o
+                0x000000000800d2fc                EXTI2_IRQHandler
+                0x000000000800d2fc                DebugMon_Handler
+                0x000000000800d2fc                TIM1_CC_IRQHandler
+                0x000000000800d2fc                TSC_IRQHandler
+                0x000000000800d2fc                TIM6_IRQHandler
+                0x000000000800d2fc                TAMP_STAMP_IRQHandler
+                0x000000000800d2fc                PendSV_Handler
+                0x000000000800d2fc                I2C3_ER_IRQHandler
+                0x000000000800d2fc                EXTI0_IRQHandler
+                0x000000000800d2fc                I2C2_EV_IRQHandler
+                0x000000000800d2fc                FPU_IRQHandler
+                0x000000000800d2fc                TIM1_UP_TIM16_IRQHandler
+                0x000000000800d2fc                ADC1_2_IRQHandler
+                0x000000000800d2fc                DMA2_Channel2_IRQHandler
+                0x000000000800d2fc                DMA1_Channel4_IRQHandler
+                0x000000000800d2fc                USART3_IRQHandler
+                0x000000000800d2fc                DMA1_Channel7_IRQHandler
+                0x000000000800d2fc                DMA2_Channel1_IRQHandler
+                0x000000000800d2fc                QUADSPI_IRQHandler
+                0x000000000800d2fc                I2C1_EV_IRQHandler
+                0x000000000800d2fc                DMA2_Channel4_IRQHandler
+                0x000000000800d2fc                RCC_IRQHandler
+                0x000000000800d2fc                TIM1_TRG_COM_IRQHandler
+                0x000000000800d2fc                Default_Handler
+                0x000000000800d2fc                DMA2_Channel7_IRQHandler
+                0x000000000800d2fc                EXTI15_10_IRQHandler
+                0x000000000800d2fc                I2C3_EV_IRQHandler
+                0x000000000800d2fc                USB_IRQHandler
+                0x000000000800d2fc                PVD_PVM_IRQHandler
+                0x000000000800d2fc                SPI2_IRQHandler
+                0x000000000800d2fc                MemManage_Handler
+                0x000000000800d2fc                SVC_Handler
+                0x000000000800d2fc                DMA2_Channel5_IRQHandler
+                0x000000000800d2fc                CRS_IRQHandler
+                0x000000000800d2fc                DMA1_Channel5_IRQHandler
+                0x000000000800d2fc                EXTI4_IRQHandler
+                0x000000000800d2fc                RNG_IRQHandler
+                0x000000000800d2fc                DMA1_Channel3_IRQHandler
+                0x000000000800d2fc                COMP_IRQHandler
+                0x000000000800d2fc                WWDG_IRQHandler
+                0x000000000800d2fc                LPUART1_IRQHandler
+                0x000000000800d2fc                DMA2_Channel6_IRQHandler
+                0x000000000800d2fc                TIM2_IRQHandler
+                0x000000000800d2fc                EXTI1_IRQHandler
+                0x000000000800d2fc                USART2_IRQHandler
+                0x000000000800d2fc                I2C2_ER_IRQHandler
+                0x000000000800d2fc                DMA1_Channel2_IRQHandler
+                0x000000000800d2fc                FLASH_IRQHandler
+                0x000000000800d2fc                I2C1_ER_IRQHandler
+                0x000000000800d2fc                LPTIM1_IRQHandler
+                0x000000000800d2fc                DMA2_Channel3_IRQHandler
+                0x000000000800d2fc                TIM1_BRK_TIM15_IRQHandler
+ *fill*         0x000000000800d2fe        0x2 
+ .text.__libc_init_array
+                0x000000000800d300       0x48 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-init.o)
+                0x000000000800d300                __libc_init_array
+ .text.memset   0x000000000800d348       0x10 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+                0x000000000800d348                memset
+ .text.__errno  0x000000000800d358        0xc c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-errno.o)
+                0x000000000800d358                __errno
+ .text.memcmp   0x000000000800d364       0x20 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcmp.o)
+                0x000000000800d364                memcmp
+ .text.memcpy   0x000000000800d384       0x1c c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+                0x000000000800d384                memcpy
+ .text.memmove  0x000000000800d3a0       0x34 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memmove.o)
+                0x000000000800d3a0                memmove
+ .text.roundf   0x000000000800d3d4       0x48 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_round.o)
+                0x000000000800d3d4                roundf
+ .text.atan2f   0x000000000800d41c        0x4 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-wf_atan2.o)
+                0x000000000800d41c                atan2f
+ .text.sqrtf    0x000000000800d420       0x3c c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-wf_sqrt.o)
+                0x000000000800d420                sqrtf
+ .text.__ieee754_atan2f
+                0x000000000800d45c      0x140 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-ef_atan2.o)
+                0x000000000800d45c                __ieee754_atan2f
+ .text.__ieee754_sqrtf
+                0x000000000800d59c        0x6 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-ef_sqrt.o)
+                0x000000000800d59c                __ieee754_sqrtf
+ *fill*         0x000000000800d5a2        0x2 
+ .text.atanf    0x000000000800d5a4      0x1a8 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_atan.o)
+                0x000000000800d5a4                atanf
+ .text.fabsf    0x000000000800d74c        0xe c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_fabs.o)
+                0x000000000800d74c                fabsf
+ *(.glue_7)
+ .glue_7        0x000000000800d75a        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x000000000800d75a        0x0 linker stubs
+ *(.eh_frame)
+ *fill*         0x000000000800d75a        0x2 
+ .eh_frame      0x000000000800d75c        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ *(.init)
+ .init          0x000000000800d75c        0x4 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x000000000800d75c                _init
+ .init          0x000000000800d760        0x8 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ *(.fini)
+ .fini          0x000000000800d768        0x4 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x000000000800d768                _fini
+ .fini          0x000000000800d76c        0x8 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x000000000800d774                . = ALIGN (0x4)
+                0x000000000800d774                _etext = .
+
+.vfp11_veneer   0x000000000800d774        0x0
+ .vfp11_veneer  0x000000000800d774        0x0 linker stubs
+
+.v4_bx          0x000000000800d774        0x0
+ .v4_bx         0x000000000800d774        0x0 linker stubs
+
+.iplt           0x000000000800d774        0x0
+ .iplt          0x000000000800d774        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+
+.ramfunctions   0x000000000800d774      0x594
+ .ramfunctions  0x000000000800d774      0x594 C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o
+
+.rodata         0x000000000800dd08      0xc1c
+                0x000000000800dd08                . = ALIGN (0x4)
+ *(.rodata)
+ .rodata        0x000000000800dd08      0xb6e C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o
+                0x000000000800dd94                lcd_digit.lto_priv.0
+                0x000000000800e09c                spi_profiles.lto_priv.0
+ *fill*         0x000000000800e876        0x2 
+ .rodata        0x000000000800e878       0x68 C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans1.ltrans.o
+ *(.rodata*)
+ .rodata.str1.1
+                0x000000000800e8e0        0x9 C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o
+ *fill*         0x000000000800e8e9        0x3 
+ .rodata.CSWTCH.8
+                0x000000000800e8ec        0xc c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-ef_atan2.o)
+ .rodata.CSWTCH.9
+                0x000000000800e8f8        0xc c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-ef_atan2.o)
+ .rodata.atanhi
+                0x000000000800e904       0x10 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_atan.o)
+ .rodata.atanlo
+                0x000000000800e914       0x10 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-sf_atan.o)
+                0x000000000800e924                . = ALIGN (0x4)
+
+.modem_id       0x000000000800e924       0x3c
+ .modem_id      0x000000000800e924       0x3c C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o
+
+.FlashVer_ID    0x000000000800e960        0x8
+ .FlashVer_ID   0x000000000800e960        0x8 C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans1.ltrans.o
+                0x000000000800e960                verconst
+
+.ARM.extab      0x000000000800e968        0x0
+                0x000000000800e968                . = ALIGN (0x4)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x000000000800e968                . = ALIGN (0x4)
+
+.ARM            0x000000000800e968        0x8
+                0x000000000800e968                . = ALIGN (0x4)
+                0x000000000800e968                __exidx_start = .
+ *(.ARM.exidx*)
+ .ARM.exidx     0x000000000800e968        0x8 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x000000000800e970                __exidx_end = .
+                0x000000000800e970                . = ALIGN (0x4)
+
+.rel.dyn        0x000000000800e970        0x0
+ .rel.iplt      0x000000000800e970        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+
+.preinit_array  0x000000000800e970        0x0
+                0x000000000800e970                . = ALIGN (0x4)
+                0x000000000800e970                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array*)
+                0x000000000800e970                PROVIDE (__preinit_array_end = .)
+                0x000000000800e970                . = ALIGN (0x4)
+
+.init_array     0x000000000800e970        0x4
+                0x000000000800e970                . = ALIGN (0x4)
+                0x000000000800e970                PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array*)
+ .init_array    0x000000000800e970        0x4 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x000000000800e974                PROVIDE (__init_array_end = .)
+                0x000000000800e974                . = ALIGN (0x4)
+
+.fini_array     0x000000000800e974        0x4
+                0x000000000800e974                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array*)
+ .fini_array    0x000000000800e974        0x4 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                [!provide]                        PROVIDE (__fini_array_end = .)
+                0x000000000800e978                . = ALIGN (0x4)
+                0x000000000800e978                _endUserFlash = .
+                0x000000000800e978                _sidata = LOADADDR (.data)
+
+.data           0x00000000200001c0      0x410 load address 0x000000000800e978
+                0x00000000200001c0                . = ALIGN (0x4)
+                0x00000000200001c0                _sdata = .
+                0x00000000200001c0                __region_RAM_start = .
+ *(.data)
+ .data          0x00000000200001c0      0x284 C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o
+                0x00000000200001c0                ApplicationScheduler
+                0x00000000200001c8                ErrorEventFlags.lto_priv.0
+                0x00000000200001e0                ticks.lto_priv.0
+                0x0000000020000284                dma_ready.lto_priv.0
+                0x00000000200002d4                tx_busy.lto_priv.0
+                0x0000000020000368                address
+                0x0000000020000370                error_init.lto_priv.0
+                0x00000000200003e0                angle_detect_flow
+ *fill*         0x0000000020000444        0x4 
+ .data          0x0000000020000448      0x124 C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans1.ltrans.o
+ *(.data*)
+ .data._impure_ptr
+                0x000000002000056c        0x4 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+                0x000000002000056c                _impure_ptr
+ .data.impure_data
+                0x0000000020000570       0x60 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+ *(.RamFunc)
+ *(.RamFunc*)
+                0x00000000200005d0                . = ALIGN (0x4)
+                0x00000000200005d0                _edata = .
+                0x000000000800ed88                _sisram2 = LOADADDR (.sram2)
+
+.igot.plt       0x00000000200005d0        0x0 load address 0x000000000800ed88
+ .igot.plt      0x00000000200005d0        0x0 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+
+.sram2          0x0000000010000000        0x0 load address 0x000000000800ed88
+                0x0000000010000000                . = ALIGN (0x4)
+                0x0000000010000000                _ssram2 = .
+ *(.sram2)
+ *(.sram2*)
+                0x0000000010000000                . = ALIGN (0x4)
+                0x0000000010000000                _esram2 = .
+                0x0000000010000000                . = ALIGN (0x4)
+
+.bss            0x00000000200005d0     0x1210
+                0x00000000200005d0                _sbss = .
+                0x00000000200005d0                __bss_start__ = _sbss
+ *(.bss)
+ .bss           0x00000000200005d0       0x1c c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ *fill*         0x00000000200005ec        0x4 
+ .bss           0x00000000200005f0     0x10c8 C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o
+                0x0000000020000624                nbfi
+                0x00000000200006a8                pulses_buffer_1
+                0x0000000020000768                pulses_buffer_2
+                0x0000000020000838                guictx.lto_priv.0
+                0x0000000020000878                axsem
+                0x0000000020000c60                sequence_nmbr
+                0x0000000020000c62                ax_buf_txrx.lto_priv.0
+                0x0000000020000c68                a_ax_buf_tx.lto_priv.0
+                0x0000000020000c70                a_ax_buf_rx.lto_priv.0
+                0x0000000020000c78                a_ax_buf_len.lto_priv.0
+                0x0000000020000c94                SpiManager.lto_priv.0
+                0x0000000020000cd8                tx_buf_p_out
+                0x0000000020000cdc                tx_buf_p_in
+                0x0000000020000ce0                tx_buf
+                0x00000000200013c8                q.lto_priv.0
+                0x0000000020001510                q.lto_priv.1
+                0x0000000020001696                storage_status.lto_priv.0
+                0x0000000020001698                zero_offset_k
+ .bss           0x00000000200016b8      0x128 C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans1.ltrans.o
+ *(.bss*)
+ *(COMMON)
+                0x00000000200017e0                . = ALIGN (0x4)
+                0x00000000200017e0                _ebss = .
+                0x00000000200017e0                __bss_end__ = _ebss
+
+.noinit         0x00000000200017e0      0xa34
+                0x00000000200017e0                . = ALIGN (0x4)
+ *(.noinit)
+ .noinit        0x00000000200017e0      0xa34 C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o
+                0x00000000200017e0                timers.lto_priv.0
+                0x0000000020001960                archive_fifo
+                0x0000000020001d61                fSortReq.lto_priv.0
+                0x0000000020002214                . = ALIGN (0x4)
+
+.ram_bat        0x0000000020009c00       0x50
+                0x0000000020009c00                . = ALIGN (0x4)
+ *(.ram_bat)
+ .ram_bat       0x0000000020009c00       0x50 C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o
+                0x0000000020009c10                signal_param
+                0x0000000020009c50                . = ALIGN (0x4)
+
+._user_heap_stack
+                0x0000000020002214      0x604
+                0x0000000020002218                . = ALIGN (0x8)
+ *fill*         0x0000000020002214        0x4 
+                [!provide]                        PROVIDE (end = .)
+                [!provide]                        PROVIDE (_end = .)
+                0x0000000020002418                . = (. + _Min_Heap_Size)
+ *fill*         0x0000000020002218      0x200 
+                0x0000000020002818                . = (. + _Min_Stack_Size)
+ *fill*         0x0000000020002418      0x400 
+                0x0000000020002818                . = ALIGN (0x8)
+                0x0000000020002818                __CSTACK_FINISH__ = .
+
+/DISCARD/
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+
+.ARM.attributes
+                0x0000000000000000       0x30
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x0000000000000000       0x1e c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+ .ARM.attributes
+                0x000000000000001e       0x34 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .ARM.attributes
+                0x0000000000000052       0x32 C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o
+ .ARM.attributes
+                0x0000000000000084       0x32 C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans1.ltrans.o
+ .ARM.attributes
+                0x00000000000000b6       0x21 ./Src/libs/boot/ext/bl_vectors.o
+ .ARM.attributes
+                0x00000000000000d7       0x21 ./port/STM32/startup_stm32l412cbtx.o
+ .ARM.attributes
+                0x00000000000000f8       0x34 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .ARM.attributes
+                0x000000000000012c       0x34 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .ARM.attributes
+                0x0000000000000160       0x34 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .ARM.attributes
+                0x0000000000000194       0x34 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .ARM.attributes
+                0x00000000000001c8       0x34 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .ARM.attributes
+                0x00000000000001fc       0x34 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .ARM.attributes
+                0x0000000000000230       0x34 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .ARM.attributes
+                0x0000000000000264       0x34 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .ARM.attributes
+                0x0000000000000298       0x34 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000000000002cc       0x34 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x0000000000000300       0x34 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000000000000334       0x34 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-errno.o)
+ .ARM.attributes
+                0x0000000000000368       0x34 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcmp.o)
+ .ARM.attributes
+                0x000000000000039c       0x34 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x00000000000003d0       0x34 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memmove.o)
+ .ARM.attributes
+                0x0000000000000404       0x1e c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x0000000000000422       0x1e c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x0000000000000440       0x1e c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .ARM.attributes
+                0x000000000000045e       0x1e c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixdfsi.o)
+ .ARM.attributes
+                0x000000000000047c       0x1e c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
+ .ARM.attributes
+                0x000000000000049a       0x1e c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .ARM.attributes
+                0x00000000000004b8       0x1e c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x00000000000004d6       0x34 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x000000000000050a       0x1e c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x0000000000000528       0x1e c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+OUTPUT(mm215_gcc.elf elf32-littlearm)
+LOAD linker stubs
+LOAD c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a
+LOAD c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
+LOAD c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a
+
+.comment        0x0000000000000000       0x50
+ .comment       0x0000000000000000       0x51 C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x51 C:\Users\ALEXAN~1.KOR\AppData\Local\Temp\mm215_gcc.elf.lfVLMa.ltrans1.ltrans.o
+ .comment       0x0000000000000000       0x50 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+                                         0x51 (size before relaxing)
+ .comment       0x0000000000000050       0x51 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .comment       0x0000000000000050       0x51 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .comment       0x0000000000000050       0x51 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .comment       0x0000000000000050       0x51 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .comment       0x0000000000000050       0x51 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .comment       0x0000000000000050       0x51 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .comment       0x0000000000000050       0x51 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+
+.debug_info     0x0000000000000000     0x57df
+ .debug_info    0x0000000000000000      0x41c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_info    0x000000000000041c      0x7e7 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_info    0x0000000000000c03      0x5fc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_info    0x00000000000011ff     0x1731 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_info    0x0000000000002930      0x96b D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_info    0x000000000000329b     0x1eb6 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_info    0x0000000000005151      0x385 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_info    0x00000000000054d6      0x309 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+
+.debug_abbrev   0x0000000000000000     0x140a
+ .debug_abbrev  0x0000000000000000      0x12d D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_abbrev  0x000000000000012d      0x238 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_abbrev  0x0000000000000365      0x159 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_abbrev  0x00000000000004be      0x4c1 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_abbrev  0x000000000000097f      0x299 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_abbrev  0x0000000000000c18      0x559 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_abbrev  0x0000000000001171      0x17f D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_abbrev  0x00000000000012f0      0x11a D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+
+.debug_aranges  0x0000000000000000      0x2a8
+ .debug_aranges
+                0x0000000000000000       0x18 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_aranges
+                0x0000000000000018       0x38 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_aranges
+                0x0000000000000050       0x80 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_aranges
+                0x00000000000000d0       0xa8 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_aranges
+                0x0000000000000178       0x40 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_aranges
+                0x00000000000001b8       0xa0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_aranges
+                0x0000000000000258       0x20 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_aranges
+                0x0000000000000278       0x30 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+
+.debug_macro    0x0000000000000000     0xe26d
+ .debug_macro   0x0000000000000000      0x144 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x0000000000000144      0xa6c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x0000000000000bb0       0x22 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x0000000000000bd2       0x8e D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x0000000000000c60       0x51 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x0000000000000cb1      0x103 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x0000000000000db4       0x6a D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x0000000000000e1e      0x1df D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x0000000000000ffd       0x40 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x000000000000103d       0x76 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x00000000000010b3       0x28 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x00000000000010db       0x28 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x0000000000001103       0x3b D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x000000000000113e       0x2d D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x000000000000116b       0x42 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x00000000000011ad      0xd39 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x0000000000001ee6     0xad2f D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x000000000000cc15       0x43 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x000000000000cc58       0x34 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x000000000000cc8c       0x4c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x000000000000ccd8       0x34 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x000000000000cd0c       0x29 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x000000000000cd35      0x174 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x000000000000cea9      0x125 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x000000000000cfce       0x22 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x000000000000cff0       0x16 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_macro   0x000000000000d006      0x135 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x000000000000d13b       0x10 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_macro   0x000000000000d14b      0x132 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_macro   0x000000000000d27d      0x17c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x000000000000d3f9       0x2e D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x000000000000d427       0x52 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x000000000000d479       0x2e D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x000000000000d4a7       0x28 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_macro   0x000000000000d4cf      0x24d D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x000000000000d71c       0x52 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x000000000000d76e       0x1e D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x000000000000d78c       0x3c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x000000000000d7c8       0x34 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x000000000000d7fc       0x16 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x000000000000d812       0x43 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x000000000000d855       0x34 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x000000000000d889       0x10 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x000000000000d899       0x58 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x000000000000d8f1       0x71 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x000000000000d962       0x1c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x000000000000d97e      0x12a D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x000000000000daa8      0x341 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x000000000000dde9       0x10 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x000000000000ddf9       0x35 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x000000000000de2e       0x20 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_macro   0x000000000000de4e      0x16d D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_macro   0x000000000000dfbb      0x162 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_macro   0x000000000000e11d      0x150 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+
+.debug_line     0x0000000000000000     0x4ef8
+ .debug_line    0x0000000000000000      0x4fc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+ .debug_line    0x00000000000004fc      0x6d9 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_line    0x0000000000000bd5      0x859 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_line    0x000000000000142e      0xf5f D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_line    0x000000000000238d      0x9c6 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_line    0x0000000000002d53     0x12e8 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_line    0x000000000000403b      0x787 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_line    0x00000000000047c2      0x736 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+
+.debug_str      0x0000000000000000    0x4f12c
+ .debug_str     0x0000000000000000    0x4aee0 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_func_table.o)
+                                      0x4b0e5 (size before relaxing)
+ .debug_str     0x000000000004aee0      0x471 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+                                      0x4b194 (size before relaxing)
+ .debug_str     0x000000000004b351       0xf8 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+                                      0x4ad7e (size before relaxing)
+ .debug_str     0x000000000004b449      0x6a5 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+                                      0x4b96b (size before relaxing)
+ .debug_str     0x000000000004baee     0x30cd D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+                                      0x4e2bc (size before relaxing)
+ .debug_str     0x000000000004ebbb      0x2c7 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+                                      0x4ba51 (size before relaxing)
+ .debug_str     0x000000000004ee82      0x156 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+                                      0x4ada0 (size before relaxing)
+ .debug_str     0x000000000004efd8      0x154 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+                                      0x4ae31 (size before relaxing)
+
+.debug_loc      0x0000000000000000     0x32f8
+ .debug_loc     0x0000000000000000      0x270 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_loc     0x0000000000000270      0x8de D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_loc     0x0000000000000b4e      0x86c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_loc     0x00000000000013ba      0x51d D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_loc     0x00000000000018d7     0x11da D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_loc     0x0000000000002ab1      0x61c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_loc     0x00000000000030cd      0x22b D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+
+.debug_ranges   0x0000000000000000      0x7e0
+ .debug_ranges  0x0000000000000000       0x48 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_ranges  0x0000000000000048      0x100 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_ranges  0x0000000000000148      0x328 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_ranges  0x0000000000000470       0x70 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_ranges  0x00000000000004e0      0x240 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_ranges  0x0000000000000720       0x88 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_ranges  0x00000000000007a8       0x38 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+
+.debug_frame    0x0000000000000000      0xabc
+ .debug_frame   0x0000000000000000       0xdc D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_flash.o)
+ .debug_frame   0x00000000000000dc      0x110 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_utils.o)
+ .debug_frame   0x00000000000001ec      0x188 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bootloader.o)
+ .debug_frame   0x0000000000000374       0xa4 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp.o)
+ .debug_frame   0x0000000000000418      0x28c D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(ncp_archive.o)
+ .debug_frame   0x00000000000006a4       0x30 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_decoder.o)
+ .debug_frame   0x00000000000006d4       0x78 D:\2021_1\Cube\mm215_gcc\Src\libs\boot\ext\libbootloader.a(bl_prog_fl_funcram.o)
+ .debug_frame   0x000000000000074c       0x2c c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x0000000000000778       0x20 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x0000000000000798       0x20 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-errno.o)
+ .debug_frame   0x00000000000007b8       0x28 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcmp.o)
+ .debug_frame   0x00000000000007e0       0x28 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000000000000808       0x28 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memmove.o)
+ .debug_frame   0x0000000000000830       0xac c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00000000000008dc       0x50 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x000000000000092c       0xc4 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x00000000000009f0       0x24 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixdfsi.o)
+ .debug_frame   0x0000000000000a14       0x24 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
+ .debug_frame   0x0000000000000a38       0x24 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .debug_frame   0x0000000000000a5c       0x2c c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x0000000000000a88       0x34 c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
