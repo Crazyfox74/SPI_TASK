@@ -23,9 +23,9 @@ OBJCOPY_BIN :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-Src/FreeRTOS \
-Src/FreeRTOS/portable/ARM_CM4F \
-Src/FreeRTOS/portable/MemMang \
+FreeRTOS/Source \
+FreeRTOS/Source/portable/GCC/ARM_CM4F \
+FreeRTOS/Source/portable/MemMang \
 Src \
 Src/perif \
 Src/utils \

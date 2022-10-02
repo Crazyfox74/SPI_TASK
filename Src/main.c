@@ -7,13 +7,9 @@
 #include "clock.h"
 #include "iwdg.h"
 
-
-#include "FreeRTOS/FreeRTOS.h"
-#include "FreeRTOS/portmacro.h"
-#include "FreeRTOS/FreeRTOSConfig.h"
-#include "FreeRTOS/croutine.h"
-#include "FreeRTOS/task.h"
-#include "FreeRTOS/queue.h"
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
 
 
 
@@ -32,6 +28,16 @@
 //#include "ax5043.h"
 
 
+
+
+#define TASK_PRIO_START 1
+#define TASK_START_STK_SIZE (1*256)
+
+
+TaskHandle_t myTask1Handle = NULL;	//хэндл 1 задачи
+TaskHandle_t myTask2Handle = NULL;	//хэндл 2 задач
+
+QueueHandle_t myQueue;	//хэндл очереди
 
 
 
@@ -59,6 +65,9 @@ volatile ApplicationScheduler_t ApplicationScheduler = {0};
 
 static void main_loop();
 
+typedef struct {
+
+} QUEUE_DATA;
 
 
 //==================================================================================
@@ -75,37 +84,78 @@ static void main_loop();
  *
  *
  */
-
-
-void vFreeRTOSInitAll()
-{
-
-}
-void vApplicationIdleHook(void)
-{
+void vApplicationIdleHook ( void ){
 }
 
-void vApplicationMallocFailedHook(void)
+ void vApplicationMallocFailedHook( void )
+ {
+     for( ;; );
+ }
+
+extern void vApplicationGetIdleTaskMemory( StaticTask_t **ppxIdleTaskTCBBuffer, StackType_t **ppxIdleTaskStackBuffer, uint32_t *pulIdleTaskStackSize)
 {
-    for(;;);
+  static StaticTask_t Idle_TCB;
+  static StackType_t  Idle_Stack[configMINIMAL_STACK_SIZE];
+
+  *ppxIdleTaskTCBBuffer = &Idle_TCB;
+  *ppxIdleTaskStackBuffer = Idle_Stack;
+  *pulIdleTaskStackSize = configMINIMAL_STACK_SIZE;
 }
-/***************************************************************************************/
 
-
-/***************************************************************************************/
-void vApplicationTickHook(void)
+extern void vApplicationGetTimerTaskMemory (StaticTask_t **ppxTimerTaskTCBBuffer, StackType_t **ppxTimerTaskStackBuffer, uint32_t *pulTimerTaskStackSize)
 {
+  static StaticTask_t Timer_TCB;
+  static StackType_t  Timer_Stack[configTIMER_TASK_STACK_DEPTH];
+
+  *ppxTimerTaskTCBBuffer   = &Timer_TCB;
+  *ppxTimerTaskStackBuffer = Timer_Stack;
+  *pulTimerTaskStackSize   = configTIMER_TASK_STACK_DEPTH;
 }
 
-void vTest(void *pvParameters){
+void vApplicationStackOverflowHook( TaskHandle_t xTask, char *pcTaskName )
+{
+    configASSERT( NULL );
+}
 
-	while(1)
-	{
-		vTaskDelay(600);
+void myTask1 (void *p){
+	int count = 0;
 
+	char TxBuf[30];
+
+	myQueue = xQueueCreate(5,sizeof(TxBuf));
+
+	sprintf(TxBuf, "message 1");
+	xQueueSend(myQueue, (void*) TxBuf, (TickType_t) 0);
+
+	sprintf(TxBuf, "message 2");
+	xQueueSend(myQueue, (void*) TxBuf, (TickType_t) 0);
+
+	sprintf(TxBuf, "message 3");
+	xQueueSend(myQueue, (void*) TxBuf, (TickType_t) 0);
+
+	while(1){
+		printf("Test: %d\r\n", count++);
+		vTaskDelay(1000);
 	}
 
 }
+
+void myTask2(void *p){
+
+	char RxBuf[30];
+
+	while(1){
+			if(myQueue!=0){
+				if(xQueueReceive(myQueue, (void *) RxBuf, (TickType_t) 5)){
+					printf("data received: %s\r\n", RxBuf);
+				}
+
+
+			}
+	}
+}
+
+
 
 volatile uint32_t delay_shuntsNoSleep = 0;
 int main(void)
@@ -114,7 +164,10 @@ int main(void)
 
 	clock_init();
 
+	xTaskCreate(myTask1, "task1", 200, (void*) 0, tskIDLE_PRIORITY, &myTask1Handle);	//создание задачи 1
+	xTaskCreate(myTask2, "task2", 200, (void*) 0, tskIDLE_PRIORITY, &myTask2Handle);	//создание задачи 2
 
+	vTaskStartScheduler();	//запуск диспетчера задач
 
 #ifdef BOOTLOADER
 	if ( SCB->VTOR == 0 )   // ���� ������� �������� ���������� �� ���������� �� ���������� ������ ��������
