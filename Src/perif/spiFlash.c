@@ -1,6 +1,8 @@
 #include "spi.h"
 
 #include "spiFlash.h"
+#include "SpiManager.h"
+#include "SpiManager_conf.h"
 
 #ifndef NULL
 	#define NULL	0
@@ -25,26 +27,30 @@
 #define MEM_BUF_CHAIN_LEN					2
 
 /********************************************************************
-	внутренние переменные
+	пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 *********************************************************************/
-//static volatile uint16_t usTimeout;					// таймаут для операций ввода/вывода
-static uint8_t *a_buf_tx[MEM_BUF_CHAIN_LEN];		// массив ссылок на буферы передачи
-static uint8_t *a_buf_rx[MEM_BUF_CHAIN_LEN];		// массив ссылок на буферы приёма
-static uint16_t a_buf_len[MEM_BUF_CHAIN_LEN];		// длины буферов
-static uint8_t buf_txrx[6];							// буфер для команды и адреса
+//static volatile uint16_t usTimeout;					// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ/пїЅпїЅпїЅпїЅпїЅпїЅ
+static uint8_t *a_buf_tx[MEM_BUF_CHAIN_LEN];		// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+static uint8_t *a_buf_rx[MEM_BUF_CHAIN_LEN];		// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+static uint16_t a_buf_len[MEM_BUF_CHAIN_LEN];		// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+static uint8_t buf_txrx[6];							// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+
+static uint8_t spi_buf_tx[32];		//Р±СѓС„РµСЂ РґР»СЏ РїРµСЂРµРґР°С‡Рё
+static uint8_t spi_buf_rx[32];		//Р±СѓС„РµСЂ РґР»СЏ С‡С‚РµРЅРёСЏ
+
 
 /********************************************************************
-	внутренние прототипы
+	пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 *********************************************************************/
 //void s25fl_GPIO_Sel( void );
 
 /********************************************************************/
-//        spiFlash_init - инициализация после вкл питания
+//        spiFlash_init - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 /********************************************************************/
 void spiFlash_init( void )
 {
-	SPI_FLASH_PWR_OUT();
-	SPI_FLASH_PWR_OFF();
+	SPI_FLASH_PWR_OUT();//РЅР°СЃС‚СЂРѕР№РєР° РЅР° РІС‹С…РѕРґ РЅРѕР¶РєРё PB9
+	SPI_FLASH_PWR_OFF();//Р·Р°РїРёСЃСЊ 1 РІ PB9(РІС‹РєР»СЋС‡РµРЅРёРµ)
 
 	SPI_FLASH_CS_OUT();
     SPI_FLASH_CS_LOW();
@@ -60,17 +66,17 @@ void spiFlash_deinit( void )
 
 void spiFlash_powerOn()
 {
-	SPI_FLASH_PWR_ON();
+	SPI_FLASH_PWR_ON();//Р·Р°РїРёСЃСЊ 0 РІ PB9(РІРєР»СЋС‡РµРЅРёРµ)
 
 	SPI_FLASH_CS_OUT();
 	SPI_FLASH_CS_HIGH();
 
-	SpiManagerPowerOn(SPI_MANAGER_ID_MEM);
+	//SpiManagerPowerOn(SPI_MANAGER_ID_MEM);
 }
 
 void spiFlash_powerDown()
 {
-	SpiManagerPowerDown(SPI_MANAGER_ID_MEM);
+	//SpiManagerPowerDown(SPI_MANAGER_ID_MEM);
 
 	SPI_FLASH_PWR_OFF();
 
@@ -88,18 +94,19 @@ void spiFlash_setCS(uint8_t bEnable)
 }
 
 /********************************************************************/
-//        spiFlash_read - чтение данных по указанному адресу
+//        spiFlash_read - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 /********************************************************************/
 void spiFlash_read( uint32_t dwAddrRead, uint16_t bCnt, uint8_t* pBuf )
 {
-	uint32_t ulTimeout = rtc_get_ticks();
-	while ( !systicks_isTimeout(ulTimeout, FL_IO_TO) )
-	{
-		if (SPI_FLASH_OPEN())
-		{
-			buf_txrx[0] = CMD_READ_DATA;		// команда чтения данных
-			buf_txrx[1] = (uint8_t)(dwAddrRead >> 16);
-			buf_txrx[2] = (uint8_t)(dwAddrRead >> 8);
+	//uint32_t ulTimeout = rtc_get_ticks();
+//	while ( !systicks_isTimeout(ulTimeout, FL_IO_TO) )
+//	{
+	//	if (SPI_FLASH_OPEN())
+	//	{
+	/*
+			buf_txrx[0] = CMD_READ_DATA;		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+			buf_txrx[1] = (uint8_t)(dwAddrRead >> 16); //С‚СЂРµС‚РёР№ Р±Р°Р№С‚ Р°РґСЂРµСЃР°
+			buf_txrx[2] = (uint8_t)(dwAddrRead >> 8);	//РІС‚РѕСЂРѕР№ Р±Р°Р№С‚ Р°РґСЂРµСЃР°
 			buf_txrx[3] = (uint8_t)(dwAddrRead >> 0);
 			a_buf_tx[0] = buf_txrx;
 			a_buf_rx[0] = NULL;
@@ -109,27 +116,44 @@ void spiFlash_read( uint32_t dwAddrRead, uint16_t bCnt, uint8_t* pBuf )
 			a_buf_rx[1] = pBuf;
 			a_buf_len[1] = bCnt;
 
-			SPI_RWx(a_buf_tx, a_buf_rx, a_buf_len, 2, NULL);
+			SpiSendRecv(buf_txrx, a_buf_tx, 4);
+			//SPI_RWx(a_buf_tx, a_buf_rx, a_buf_len, 2, NULL);
 
-			SPI_FLASH_CLOSE();
+*/
+	uint16_t i;
+			spi_buf_tx[0]=CMD_READ_DATA;
+			spi_buf_tx[1] = (uint8_t)(dwAddrRead >> 16); //С‚СЂРµС‚РёР№ Р±Р°Р№С‚ Р°РґСЂРµСЃР°
+			spi_buf_tx[2] = (uint8_t)(dwAddrRead >> 8);	//РІС‚РѕСЂРѕР№ Р±Р°Р№С‚ Р°РґСЂРµСЃР°
+			spi_buf_tx[3] = (uint8_t)(dwAddrRead >> 0);
 
-			break;
-		}
-	}
+
+
+			for( i=4;i<4+bCnt;i++){
+				spi_buf_tx[i]=0xff;
+			}
+			a_buf_rx[0] = pBuf;
+			SpiSendRecv(spi_buf_tx, a_buf_rx[0], i);
+
+
+		//	SPI_FLASH_CLOSE();
+
+	//		break;
+	//	}
+	//}
 }
 
 /********************************************************************/
-//        spiFlash_write - запись данных по указанному адресу
+//        spiFlash_write - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 /********************************************************************/
 static volatile uint32_t ulAgain = 0;
 uint8_t spiFlash_write( uint32_t dwAddrWrite, uint16_t bCnt, uint8_t* pBuf )
 {
 	uint8_t res = FLASH_RES_ERROR_AGAIN;
 
-	// разрешаем запись
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	uint8_t i = FLASH_WE_ATTEMPTS;
 	uint8_t j = 0;
-	while (i && j < FLASH_WE_ATTEMPTS)	/// TODO: почему можем залипнуть на FLASH_RES_ERROR_AGAIN ? -> radio может не закрыть SPI
+	while (i && j < FLASH_WE_ATTEMPTS)	/// TODO: пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ FLASH_RES_ERROR_AGAIN ? -> radio пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ SPI
 	{
 		if (spiFlash_wrtEnbl() == FLASH_RES_ERROR_AGAIN)
 		{
@@ -143,16 +167,16 @@ uint8_t spiFlash_write( uint32_t dwAddrWrite, uint16_t bCnt, uint8_t* pBuf )
 		}
 		i--;
 	}
-	if (i == 0) // так и не удалось разрешить запись?
-		res = (j == FLASH_WE_ATTEMPTS)? FLASH_RES_ERROR_AGAIN : FLASH_RES_ERROR_WRITE_ENABLE;	// FLASH_RES_ERROR_AGAIN в случае, если WE возвращал только FLASH_RES_ERROR_AGAIN
+	if (i == 0) // пїЅпїЅпїЅ пїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ?
+		res = (j == FLASH_WE_ATTEMPTS)? FLASH_RES_ERROR_AGAIN : FLASH_RES_ERROR_WRITE_ENABLE;	// FLASH_RES_ERROR_AGAIN пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ WE пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ FLASH_RES_ERROR_AGAIN
 	else
 	{
-        uint32_t ulTimeout = rtc_get_ticks();
-        while ( !systicks_isTimeout(ulTimeout, FL_IO_TO) )
+      //  uint32_t ulTimeout = rtc_get_ticks();
+     //   while ( !systicks_isTimeout(ulTimeout, FL_IO_TO) )
 		{
-			if (SPI_FLASH_OPEN())
+	//		if (SPI_FLASH_OPEN())
 			{
-				buf_txrx[0] = CMD_PAGE_PROGRAMM;		// команда записи данных
+				buf_txrx[0] = CMD_PAGE_PROGRAMM;		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 				buf_txrx[1] = (uint8_t)(dwAddrWrite >> 16);
 				buf_txrx[2] = (uint8_t)(dwAddrWrite >> 8);
 				buf_txrx[3] = (uint8_t)(dwAddrWrite >> 0);
@@ -166,10 +190,10 @@ uint8_t spiFlash_write( uint32_t dwAddrWrite, uint16_t bCnt, uint8_t* pBuf )
 
 				SPI_RWx(a_buf_tx, a_buf_rx, a_buf_len, 2, NULL);
 
-				SPI_FLASH_CLOSE();
+			//	SPI_FLASH_CLOSE();
 
 				res = FLASH_RES_OK;
-				break;
+			//	break;
 			}
 		}
 	}
@@ -181,29 +205,45 @@ uint8_t spiFlash_write( uint32_t dwAddrWrite, uint16_t bCnt, uint8_t* pBuf )
 }
 
 /********************************************************************/
-//        s25fl_readStatus - чтение регистра статуса
+//        s25fl_readStatus - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 /********************************************************************/
-uint8_t spiFlash_readStatus( void )
+uint16_t spiFlash_readStatus1( void )
 {
-	uint8_t bRegStatus = 0x01;
+	uint16_t bRegStatus;
 
-	uint32_t ulTimeout = rtc_get_ticks();
-	while ( !systicks_isTimeout(ulTimeout, FL_IO_TO) )
-	{
-		if (SPI_FLASH_OPEN())
-		{
-			buf_txrx[0] = CMD_READ_STATUS_REG;		// команда чтения регистра статуса
+//	uint32_t ulTimeout = rtc_get_ticks();
+//	while ( !systicks_isTimeout(ulTimeout, FL_IO_TO) )
+	//{
+	//	if (SPI_FLASH_OPEN())
+		//{
+	/*
+			buf_txrx[0] = CMD_READ_STATUS_REG;		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			buf_txrx[1] = 0xFF;
 
-			SPI_RW(buf_txrx, buf_txrx, 2, NULL);
+			SpiSendRecv(buf_txrx, buf_txrx, 2);
 
-			SPI_FLASH_CLOSE();
+		//	SPI_RW(buf_txrx, buf_txrx, 2, NULL);
+
+		//	SPI_FLASH_CLOSE();
 
 			bRegStatus = buf_txrx[1];
 
-			break;
-		}
-	}
+*/
+
+			spi_buf_tx[0]=CMD_READ_STATUS_REG;
+			spi_buf_tx[1]=0xff;
+			spi_buf_tx[2]=0xff;
+
+			SpiSendRecv(spi_buf_tx, spi_buf_rx, 3);
+
+			bRegStatus=spi_buf_rx[0];
+			bRegStatus=bRegStatus<<8;
+			bRegStatus |=spi_buf_rx[1];
+
+
+		//	break;
+		//}
+//	}
 
 	return bRegStatus;
 }
@@ -212,21 +252,24 @@ uint8_t spiFlash_wrtEnbl()
 {
 	uint8_t res = FLASH_RES_ERROR_AGAIN;
 
-	// разрешаем запись
-	uint32_t ulTimeout = rtc_get_ticks();
-	while ( !systicks_isTimeout(ulTimeout, FL_IO_TO) )
-	{
-		if (SPI_FLASH_OPEN())
-		{
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	//uint32_t ulTimeout = rtc_get_ticks();
+//	while ( !systicks_isTimeout(ulTimeout, FL_IO_TO) )
+//	{
+	//	if (SPI_FLASH_OPEN())
+	//	{
 			buf_txrx[0] = CMD_WRITE_ENABLE;
-			SPI_RW(buf_txrx, NULL, 1, NULL);
 
-			SPI_FLASH_CLOSE();
+			SpiSendRecv(buf_txrx, NULL, 1);
+
+		//	SPI_RW(buf_txrx, NULL, 1, NULL);
+
+		//	SPI_FLASH_CLOSE();
 
 			res = FLASH_RES_OK;
-			break;
-		}
-	}
+		//	break;
+		//}
+	//}
 
 	return res;
 }
@@ -249,7 +292,7 @@ uint8_t spiFlash_wrtEnbl()
 }*/
 
 /********************************************************************/
-//        spiFlash_readJEDECDesc - чтение регистра статуса
+//        spiFlash_readJEDECDesc - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 /********************************************************************/
 uint32_t spiFlash_readJEDECDesc( void )
 {
@@ -260,7 +303,7 @@ uint32_t spiFlash_readJEDECDesc( void )
 	{
 		if (SPI_FLASH_OPEN())
 		{
-			buf_txrx[0] = 0x9F;		// команда чтения регистра JEDEC
+			buf_txrx[0] = 0x9F;		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ JEDEC
 			a_buf_tx[0] = buf_txrx;
 			a_buf_rx[0] = NULL;
 			a_buf_len[0] = 1;
@@ -281,13 +324,13 @@ uint32_t spiFlash_readJEDECDesc( void )
 }
 
 /********************************************************************/
-//        spiFlash_eraseSector - стирание сектора по указанному адресу
+//        spiFlash_eraseSector - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 /********************************************************************/
 uint8_t spiFlash_eraseSector( uint32_t dwSectAddr )
 {
 	uint8_t res = FLASH_RES_ERROR_AGAIN;
 
-	// разрешаем запись
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	uint8_t i = FLASH_WE_ATTEMPTS;
 	uint8_t j = 0;
 	while (i && j < FLASH_WE_ATTEMPTS)
@@ -304,17 +347,17 @@ uint8_t spiFlash_eraseSector( uint32_t dwSectAddr )
 		}
 		i--;
 	}
-	if (i == 0) // так и не удалось разрешить запись?
-		res = (j == FLASH_WE_ATTEMPTS)? FLASH_RES_ERROR_AGAIN : FLASH_RES_ERROR_WRITE_ENABLE;	// FLASH_RES_ERROR_AGAIN в случае, если WE возвращал только FLASH_RES_ERROR_AGAIN
+	if (i == 0) // пїЅпїЅпїЅ пїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ?
+		res = (j == FLASH_WE_ATTEMPTS)? FLASH_RES_ERROR_AGAIN : FLASH_RES_ERROR_WRITE_ENABLE;	// FLASH_RES_ERROR_AGAIN пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ WE пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ FLASH_RES_ERROR_AGAIN
 	else
 	{
-		// стирание сектора 4 Кбайта
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 4 пїЅпїЅпїЅпїЅпїЅпїЅ
 	uint32_t ulTimeout = rtc_get_ticks();
 	while ( !systicks_isTimeout(ulTimeout, FL_IO_TO) )
 		{
 			if (SPI_FLASH_OPEN())
 			{
-				buf_txrx[0] = CMD_ERASE_4KB;		// команда стирание сектора
+				buf_txrx[0] = CMD_ERASE_4KB;		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				buf_txrx[1] = (uint8_t)(dwSectAddr >> 16);
 				buf_txrx[2] = (uint8_t)(dwSectAddr >> 8);
 				buf_txrx[3] = (uint8_t)(dwSectAddr >> 0);

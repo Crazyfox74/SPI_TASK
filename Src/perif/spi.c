@@ -158,8 +158,8 @@ void SpiInit()
 	/* Peripheral clock enable */
 	LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_SPI1);
 
-	RCC->APB2RSTR |= RCC_APB2RSTR_SPI1RST;
-	RCC->APB2RSTR &= ~(RCC_APB2RSTR_SPI1RST);
+	RCC->APB2RSTR |= RCC_APB2RSTR_SPI1RST;//reset RCC_SPI(запись единицы)
+	RCC->APB2RSTR &= ~(RCC_APB2RSTR_SPI1RST);//don't reset RCC_SPI(запись нуля)
 
 	/* SPI1 parameter configuration*/
 	SPI_InitStruct.TransferDirection = LL_SPI_FULL_DUPLEX;
@@ -222,7 +222,7 @@ void SpiSendRecv(uint8_t *buf_tx, uint8_t *buf_rx, uint16_t len)
 	usBufPosTx = 1;
 	usBufCnt = len;
 
-	while (!(_SPI->SR & SPI_SR_TXE));
+	while (!(_SPI->SR & SPI_SR_TXE)); //ожидание установки 1 в TXE(окончание передачи)
 	if (pBufTx)
 		*(uint8_t*)&_SPI->DR = *pBufTx;
 	else
@@ -298,7 +298,7 @@ void SPI1_IRQHandler(void)
 	if (++usBufPosRx >= usBufCnt)
 	{
 		SpiActive = 0;
-		SPI_ON_READY_ISR_CB(0);
+		//SPI_ON_READY_ISR_CB(0);
 	}
 }
 #endif

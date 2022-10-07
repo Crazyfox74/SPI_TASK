@@ -12,12 +12,11 @@ RM := rm -rf
 -include port/STM32/STM32L4xx_HAL_Driver/Src/subdir.mk
 -include port/STM32/CMSIS/Src/subdir.mk
 -include port/STM32/subdir.mk
--include Src/utils/subdir.mk
 -include Src/perif/subdir.mk
--include Src/FreeRTOS/portable/MemMang/subdir.mk
--include Src/FreeRTOS/portable/ARM_CM4F/subdir.mk
--include Src/FreeRTOS/subdir.mk
 -include Src/subdir.mk
+-include FreeRTOS/Source/portable/MemMang/subdir.mk
+-include FreeRTOS/Source/portable/GCC/ARM_CM4F/subdir.mk
+-include FreeRTOS/Source/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -72,8 +71,8 @@ all: main-build
 main-build: mm215_gccMy.elf secondary-outputs
 
 # Tool invocations
-mm215_gccMy.elf mm215_gccMy.map: $(OBJS) $(USER_OBJS) C:\Users\User\STM32CubeIDE\workspace_1.10.1\mm215_gccMy\STM32L412CBUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "mm215_gccMy.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\User\STM32CubeIDE\workspace_1.10.1\mm215_gccMy\STM32L412CBUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="mm215_gccMy.map" -Wl,--gc-sections -static -L"C:\Users\User\STM32CubeIDE\workspace_1.10.1\mm215_gccMy\port\STM32\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb
+mm215_gccMy.elf mm215_gccMy.map: $(OBJS) $(USER_OBJS) D:\Nero\SPI_TASK-branch_1\SPI_TASK-branch_1\STM32L412CBUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "mm215_gccMy.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Nero\SPI_TASK-branch_1\SPI_TASK-branch_1\STM32L412CBUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="mm215_gccMy.map" -Wl,--gc-sections -static -L"D:\Nero\SPI_TASK-branch_1\SPI_TASK-branch_1\port\STM32\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb
 	@echo 'Finished building target: $@'
 	@echo ' '
 

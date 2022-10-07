@@ -4,4 +4,4 @@
 ../Src/perif/spi.c:245:6:SpiBreak	8	static
 ../Src/perif/spi.c:266:6:SpiSetPrescaler	0	static
 ../Src/perif/spi.c:271:17:SpiIsReady	0	static
-../Src/perif/spi.c:277:6:SPI1_IRQHandler	16	static
+../Src/perif/spi.c:277:6:SPI1_IRQHandler	8	static
