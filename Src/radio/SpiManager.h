@@ -34,6 +34,9 @@ SPI_MAN SpiManagerSendRecvX(uint8_t **a_buf_tx, uint8_t **a_buf_rx, uint16_t *a_
 
 SPI_MAN SpiManagerBreak(uint8_t id);											// ���������� �������� ������ �� SPI � ��������� �����
 
+void SpiManagerSendRecvFlash(uint8_t *buf_tx, uint8_t *buf_rx, uint16_t len);
+void SpiManagerSendRecvFlashX(uint8_t **a_buf_tx, uint8_t **a_buf_rx, uint16_t *a_buf_len, uint8_t cnt);
+
 void SpiManager_OnSpiCompleteISR(uint8_t bError);								// ���������� �� ��������� �������� �� ����������
 
 #endif

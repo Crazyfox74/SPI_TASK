@@ -3,6 +3,8 @@
 #include "SpiManager_conf.h"
 #include <string.h>
 
+#include "spi.h"
+
 // SpiManager. Организует доступ к SPI согласно заданному профилю.
 //		Конфигурация должна быть описана в профиле SPI_MAN_PROFILES_ARRAY
 //
@@ -41,7 +43,9 @@ typedef struct
 	uint8_t L2;
 } LOCK;
 
-static SPI_MAN_PROFILE spi_profiles[SPI_DEVS_COUNT] = SPI_MAN_PROFILES_ARRAY;
+extern volatile uint8_t SpiActive;
+
+//static SPI_MAN_PROFILE spi_profiles[SPI_DEVS_COUNT] = SPI_MAN_PROFILES_ARRAY;
 
 static struct
 {
@@ -108,8 +112,8 @@ void SpiManagerInit()
 	LockInit(&SpiManager.LockCb);
 
 	// деактивируем чипы на линии SPI
-	for (uint8_t i = 0; i < SPI_DEVS_COUNT; i++)
-		spi_profiles[i].cs_set(0);
+//	for (uint8_t i = 0; i < SPI_DEVS_COUNT; i++)
+//		spi_profiles[i].cs_set(0);
 
 	TIMER_STOP_ALL();
 }
@@ -166,7 +170,7 @@ SPI_MAN SpiManagerGet(uint8_t id)
 			SpiManager.usOpenTimeout = SPI_OPEN_TIME_MAX;
 
 			// настраиваем SPI
-			SPI_SET_PRESCALER(spi_profiles[SpiManager.ucCurrId].prescaler);
+	//		SPI_SET_PRESCALER(spi_profiles[SpiManager.ucCurrId].prescaler);
 
 			res = SPI_MAN_OK;
 		}
@@ -185,7 +189,7 @@ SPI_MAN SpiManagerGetCb(uint8_t id, void (*OnGet_cb)())
 			SpiManager.ucCurrId = id;
 			SpiManager.usOpenTimeout = SPI_OPEN_TIME_MAX;
 
-			SPI_SET_PRESCALER(spi_profiles[SpiManager.ucCurrId].prescaler);
+	//		SPI_SET_PRESCALER(spi_profiles[SpiManager.ucCurrId].prescaler);
 			Unlock(&SpiManager.LockGet);	//
 			OnGet_cb();	// сразу же вызываем
 		}
@@ -216,7 +220,7 @@ SPI_MAN SpiManagerFree(uint8_t id)
 	if (SpiManager.ucCurrId == id)		// проверка, чтобы не закрыть чужое устройство
 	{
 		SpiManager.OnRxTxComplete_cb = NULL;
-		spi_profiles[SpiManager.ucCurrId].cs_set(0); // deactivate CS
+//		spi_profiles[SpiManager.ucCurrId].cs_set(0); // deactivate CS
 
 		SpiManager.ucCurrId = DEV_ID_INVALID;
 	}
@@ -231,7 +235,7 @@ SPI_MAN SpiManagerFree(uint8_t id)
 				{
 					SpiManager.ucCurrId = i;			// теперь устройство стало открыто
 
-					SPI_SET_PRESCALER(spi_profiles[SpiManager.ucCurrId].prescaler);
+			//		SPI_SET_PRESCALER(spi_profiles[SpiManager.ucCurrId].prescaler);
 
 					func = SpiManager.aOnGet_cb[i];
 					SpiManager.aOnGet_cb[i] = NULL;
@@ -256,7 +260,7 @@ SPI_MAN SpiManagerSendRecv(uint8_t *buf_tx, uint8_t *buf_rx, uint16_t len, void 
 	if (SpiManager.ucCurrId == DEV_ID_INVALID)
 		return SPI_MAN_ERROR;
 
-	spi_profiles[SpiManager.ucCurrId].cs_set(1); // activate CS
+//	spi_profiles[SpiManager.ucCurrId].cs_set(1); // activate CS
 	SpiManager.bSpiBusy = 1;
 	SpiManager.ucIrqTimeout = (uint8_t)(SPI_IO_TIMEOUT/100)? (uint8_t)(SPI_IO_TIMEOUT/100) : 1;
 
@@ -272,10 +276,10 @@ SPI_MAN SpiManagerSendRecv(uint8_t *buf_tx, uint8_t *buf_rx, uint16_t len, void 
 			return SPI_MAN_ERROR;
 		}
 
-		if (SpiManager.ucCurrId != DEV_ID_INVALID)	// проверяем, т.к. ucCurrId может быть сброшен в случае ошибки SPI
-			spi_profiles[SpiManager.ucCurrId].cs_set(0); // deactivate CS
+	/*	if (SpiManager.ucCurrId != DEV_ID_INVALID)	// проверяем, т.к. ucCurrId может быть сброшен в случае ошибки SPI
+			spi_profiles[SpiManager.ucCurrId].cs_set(0); // deactivate CS*/
 	}
-	else
+/*	else
 	{
 		// имитируем вырожденную цепочку буферов с длинной в 0 (чтобы вызвался callback по завершении)
 		SpiManager.ucBufChainPos	= 0;
@@ -284,7 +288,7 @@ SPI_MAN SpiManagerSendRecv(uint8_t *buf_tx, uint8_t *buf_rx, uint16_t len, void 
 
 		SpiSendRecv(buf_tx, buf_rx, len);
 	}
-
+*/
 	return SPI_MAN_OK;
 }
 
@@ -299,7 +303,7 @@ SPI_MAN SpiManagerSendRecvX(uint8_t **a_buf_tx, uint8_t **a_buf_rx, uint16_t *a_
 	if (SpiManager.ucCurrId == DEV_ID_INVALID)
 		return SPI_MAN_ERROR;
 
-	spi_profiles[SpiManager.ucCurrId].cs_set(1); // activate CS
+//	spi_profiles[SpiManager.ucCurrId].cs_set(1); // activate CS
 
 	SpiManager.ucIrqTimeout = (uint8_t)(SPI_IO_TIMEOUT/100)? (uint8_t)(SPI_IO_TIMEOUT/100) : 1;
 	if (OnComplete_cb == NULL) // нет callback'а - значит должны сидеть тут
@@ -317,10 +321,10 @@ SPI_MAN SpiManagerSendRecvX(uint8_t **a_buf_tx, uint8_t **a_buf_rx, uint16_t *a_
 			}
 		}
 
-		if (SpiManager.ucCurrId != DEV_ID_INVALID)	// проверяем, т.к. ucCurrId может быть сброшен в случае ошибки SPI
-			spi_profiles[SpiManager.ucCurrId].cs_set(0); // deactivate CS
+/*		if (SpiManager.ucCurrId != DEV_ID_INVALID)	// проверяем, т.к. ucCurrId может быть сброшен в случае ошибки SPI
+			spi_profiles[SpiManager.ucCurrId].cs_set(0); // deactivate CS*/
 	}
-	else
+/*	else
 	{
 		SpiManager.paTxBuf = a_buf_tx;
 		SpiManager.paRxBuf = a_buf_rx;
@@ -332,7 +336,7 @@ SPI_MAN SpiManagerSendRecvX(uint8_t **a_buf_tx, uint8_t **a_buf_rx, uint16_t *a_
 
 		SpiSendRecv(a_buf_tx[0], a_buf_rx[0], a_buf_len[0]);
 	}
-
+*/
 	return SPI_MAN_OK;
 }
 
@@ -352,7 +356,7 @@ SPI_MAN SpiManagerBreak(uint8_t id)
 			SpiManager.OnRxTxComplete_cb = NULL;
 //			if (ucCurrId != DEV_ID_INVALID)	// проверяем, т.к. ucCurrId может быть сброшен в случае ошибки SPI
 			{
-				spi_profiles[SpiManager.ucCurrId].cs_set(0); // deactivate CS
+//				spi_profiles[SpiManager.ucCurrId].cs_set(0); // deactivate CS
 				SpiManager.ucCurrId = DEV_ID_INVALID;
 				SpiManager.bSpiBusy = 0;
 //				SPI_BREAK();														// актуально для активной длинной посылки
@@ -383,7 +387,7 @@ void SpiManager_OnSpiCompleteISR(uint8_t bError)
 	{
 		if ( (++SpiManager.ucBufChainPos >= SpiManager.ucBufChainLen) || bError) // передали всю цепочку или ошибка?
 		{
-			spi_profiles[SpiManager.ucCurrId].cs_set(0); // deactivate CS
+	//		spi_profiles[SpiManager.ucCurrId].cs_set(0); // deactivate CS
 
 			// do callback
 			void (*cb)() = SpiManager.OnRxTxComplete_cb;	// т.к. в самом callback может быть задан новый callback, очищаем его ДО вызова callback
@@ -436,7 +440,7 @@ void SpiManager_100msTo(void *param)
 						SpiManager.ucCurrId = i;			// теперь устройство стало открыто
 						SpiManager.usOpenTimeout = SPI_OPEN_TIME_MAX;
 
-						SPI_SET_PRESCALER(spi_profiles[SpiManager.ucCurrId].prescaler);
+		//				SPI_SET_PRESCALER(spi_profiles[SpiManager.ucCurrId].prescaler);
 
 						func = SpiManager.aOnGet_cb[i];
 						SpiManager.aOnGet_cb[i] = NULL;
@@ -471,3 +475,25 @@ void SpiManager_OnTimeout()
 	SPI_MANAGER_TIMEOUT_CB(1);
 #endif
 }
+
+void SpiManagerSendRecvFlash(uint8_t *buf_tx, uint8_t *buf_rx, uint16_t len)
+{
+		SpiSendRecv(buf_tx, buf_rx, len);
+}
+
+
+void SpiManagerSendRecvFlashX(uint8_t **a_buf_tx, uint8_t **a_buf_rx, uint16_t *a_buf_len, uint8_t cnt)
+{
+
+			for (uint8_t i = 0; i < cnt; i++)
+			{
+
+				SpiSendRecv(a_buf_tx[i], a_buf_rx[i], a_buf_len[i]);
+
+				while(SpiActive);
+			}
+
+
+
+}
+

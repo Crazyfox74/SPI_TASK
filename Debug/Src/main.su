@@ -9,4 +9,4 @@ D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/Src/perif/board.h:159:20:board_gpio_
 ../Src/main.c:100:13:vApplicationGetIdleTaskMemory	0	static
 ../Src/main.c:110:13:vApplicationGetTimerTaskMemory	0	static
 ../Src/main.c:120:6:vApplicationStackOverflowHook	0	static,ignoring_inline_asm
-../Src/main.c:171:5:main	16	static,ignoring_inline_asm
+../Src/main.c:183:5:main	16	static,ignoring_inline_asm

@@ -28,6 +28,7 @@ FreeRTOS/Source/portable/GCC/ARM_CM4F \
 FreeRTOS/Source/portable/MemMang \
 Src \
 Src/perif \
+Src/radio \
 port/STM32/CMSIS/Src \
 port/STM32/STM32L4xx_HAL_Driver/Src \
 port/STM32 \

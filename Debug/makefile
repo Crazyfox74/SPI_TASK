@@ -12,6 +12,7 @@ RM := rm -rf
 -include port/STM32/STM32L4xx_HAL_Driver/Src/subdir.mk
 -include port/STM32/CMSIS/Src/subdir.mk
 -include port/STM32/subdir.mk
+-include Src/radio/subdir.mk
 -include Src/perif/subdir.mk
 -include Src/subdir.mk
 -include FreeRTOS/Source/portable/MemMang/subdir.mk

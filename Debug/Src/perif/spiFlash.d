@@ -16,6 +16,7 @@ Src/perif/spiFlash.o: ../Src/perif/spiFlash.c ../Src/perif/spi.h \
  D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/port/STM32/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_bus.h \
  D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/port/STM32/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_exti.h \
  D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/port/STM32/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_system.h \
+ D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/Src/utils/delay.h \
  ../Src/perif/spiFlash.h \
  D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/Src/radio/SpiManager.h \
  D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/Src/radio/SpiManager_conf.h \
@@ -40,6 +41,7 @@ D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/port/STM32/STM32L4xx_HAL_Driver/Inc/
 D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/port/STM32/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_bus.h:
 D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/port/STM32/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_exti.h:
 D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/port/STM32/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_system.h:
+D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/Src/utils/delay.h:
 ../Src/perif/spiFlash.h:
 D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/Src/radio/SpiManager.h:
 D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/Src/radio/SpiManager_conf.h:

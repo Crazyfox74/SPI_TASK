@@ -8,7 +8,7 @@
 
 static LL_SPI_InitTypeDef SPI_InitStruct = { 0 };
 
-static volatile uint8_t SpiActive;					// флаг активной передачи
+volatile uint8_t SpiActive;					// флаг активной передачи
 
 #ifndef SPI_DMA
 static uint8_t *pBufTx, *pBufRx;
@@ -225,8 +225,12 @@ void SpiSendRecv(uint8_t *buf_tx, uint8_t *buf_rx, uint16_t len)
 	while (!(_SPI->SR & SPI_SR_TXE)); //ожидание установки 1 в TXE(окончание передачи)
 	if (pBufTx)
 		*(uint8_t*)&_SPI->DR = *pBufTx;
+	//_SPI->DR = 5;
 	else
 		*(uint8_t*)&_SPI->DR = SPI_EMPTY_BYTE;
+
+	//while(SpiActive);
+
 #endif
 
 #ifdef SPI_DMA
@@ -293,11 +297,16 @@ void SPI1_IRQHandler(void)
 
 			usBufPosTx++;
 		}
+/*		else
+		{
+			SPI_FLASH_CS_HIGH();
+		}*/
 	}
 
 	if (++usBufPosRx >= usBufCnt)
 	{
 		SpiActive = 0;
+	//	SPI_FLASH_CS_HIGH();
 		//SPI_ON_READY_ISR_CB(0);
 	}
 }

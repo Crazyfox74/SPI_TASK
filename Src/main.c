@@ -2,7 +2,7 @@
 #include <stm32l4xx_ll_cortex.h>
 #include <stm32l4xx_ll_rtc.h>
 #include <stdio.h>
-
+#include <string.h>
 
 #include "clock.h"
 #include "iwdg.h"
@@ -11,7 +11,7 @@
 #include "task.h"
 #include "queue.h"
 
-
+#include "delay.h"
 
 	#ifdef BOOTLOADER
 #include "bl_AppUser.h"
@@ -167,21 +167,58 @@ volatile uint32_t delay_shuntsNoSleep = 0;
 uint32_t flash_addr;
 uint8_t cnt_flashb=4;
 uint8_t rx_flashb[64];
+uint8_t tx_flashb[64]={25,55,74,84};
 uint16_t stat_reg1;
+uint16_t stat_reg2;
+//extern volatile uint8_t SpiActive;
+uint32_t jedec_id;
+uint8_t wr_en;
+
+uint8_t res = FLASH_RES_ERROR_AGAIN;
+
+uint8_t k=0;
+
+uint8_t res_erase;
+
 int main(void)
 {
 
 
 	clock_init();
 
+    NVIC_SetPriorityGrouping(NVIC_PRIORITYGROUP_4);
+
+	board_gpio_init();				/* Initialize board IO */
+
 	SpiInit();
 	spiFlash_init();
 	spiFlash_powerOn();
 
-	stat_reg1=spiFlash_readStatus1();
+	wr_en=spiFlash_wrtEnbl();
 
-	flash_addr=0;
-	spiFlash_read( flash_addr, cnt_flashb, rx_flashb );
+	stat_reg1=spiFlash_readStatus(CMD_READ_STATUS_REG1);
+	stat_reg2=spiFlash_readStatus(CMD_READ_STATUS_REG2);
+
+	res_erase=spiFlash_eraseSector(0);
+	do {
+		stat_reg1=spiFlash_readStatus(CMD_READ_STATUS_REG1);
+	} while (stat_reg1 & 0x01 );
+
+
+	memset(rx_flashb, 0x00, sizeof(rx_flashb));
+
+	spiFlash_read( 0, cnt_flashb, rx_flashb );
+
+	wr_en=spiFlash_wrtEnbl();
+	stat_reg1=spiFlash_readStatus(CMD_READ_STATUS_REG1);
+	stat_reg2=spiFlash_readStatus(CMD_READ_STATUS_REG2);
+
+	spiFlash_write(0, cnt_flashb, tx_flashb);
+	do {
+		stat_reg1=spiFlash_readStatus(CMD_READ_STATUS_REG1);
+	} while (stat_reg1 & 0x01 );
+
+	spiFlash_read( 0, cnt_flashb, rx_flashb );
 
 	xTaskCreate(myTask1, "task1", 200, (void*) 0, tskIDLE_PRIORITY, &myTask1Handle);	//создание задачи 1
 	xTaskCreate(myTask2, "task2", 200, (void*) 0, tskIDLE_PRIORITY, &myTask2Handle);	//создание задачи 2
@@ -204,9 +241,7 @@ int main(void)
 
 //	SystemCoreClockUpdate();		/* Read core clock setting */
 
-    NVIC_SetPriorityGrouping(NVIC_PRIORITYGROUP_4);
 
-	board_gpio_init();				/* Initialize board IO */
 
 #if defined(DEBUG_) || defined(NCP_TESTS)
     uart_init();

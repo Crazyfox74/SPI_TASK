@@ -1,5 +1,7 @@
 #include "spi.h"
 
+#include "delay.h"
+
 #include "spiFlash.h"
 #include "SpiManager.h"
 #include "SpiManager_conf.h"
@@ -11,7 +13,8 @@
 #define CMD_WRITE_ENABLE					0x06
 #define CMD_PAGE_PROGRAMM					0x02
 #define CMD_RELEASE_POWER_DOWN				0xAB
-#define CMD_READ_STATUS_REG					0x05
+#define CMD_READ_STATUS_REG1				0x05
+#define CMD_READ_STATUS_REG2				0x35
 #define CMD_READ_DATA						0x03
 #define CMD_ERASE_4KB						0x20
 #define CMD_ERASE_64KB						0xd8
@@ -38,7 +41,7 @@ static uint8_t buf_txrx[6];							// ����� ��� ������
 static uint8_t spi_buf_tx[32];		//буфер для передачи
 static uint8_t spi_buf_rx[32];		//буфер для чтения
 
-
+extern volatile uint8_t SpiActive;
 /********************************************************************
 	���������� ���������
 *********************************************************************/
@@ -71,6 +74,7 @@ void spiFlash_powerOn()
 	SPI_FLASH_CS_OUT();
 	SPI_FLASH_CS_HIGH();
 
+	SPI_IRQ_ENABLE();
 	//SpiManagerPowerOn(SPI_MANAGER_ID_MEM);
 }
 
@@ -98,48 +102,39 @@ void spiFlash_setCS(uint8_t bEnable)
 /********************************************************************/
 void spiFlash_read( uint32_t dwAddrRead, uint16_t bCnt, uint8_t* pBuf )
 {
-	//uint32_t ulTimeout = rtc_get_ticks();
-//	while ( !systicks_isTimeout(ulTimeout, FL_IO_TO) )
-//	{
-	//	if (SPI_FLASH_OPEN())
-	//	{
-	/*
-			buf_txrx[0] = CMD_READ_DATA;		// ������� ������ ������
-			buf_txrx[1] = (uint8_t)(dwAddrRead >> 16); //третий байт адреса
-			buf_txrx[2] = (uint8_t)(dwAddrRead >> 8);	//второй байт адреса
-			buf_txrx[3] = (uint8_t)(dwAddrRead >> 0);
-			a_buf_tx[0] = buf_txrx;
-			a_buf_rx[0] = NULL;
-			a_buf_len[0] = 4;
 
-			a_buf_tx[1] = NULL;
-			a_buf_rx[1] = pBuf;
-			a_buf_len[1] = bCnt;
+	buf_txrx[0] = CMD_READ_DATA;
+	buf_txrx[1] = (uint8_t)(dwAddrRead >> 16);
+	buf_txrx[2] = (uint8_t)(dwAddrRead >> 8);
+	buf_txrx[3] = (uint8_t)(dwAddrRead >> 0);
+	a_buf_tx[0] = buf_txrx;
+	a_buf_rx[0] = NULL;
+	a_buf_len[0] = 4;
 
-			SpiSendRecv(buf_txrx, a_buf_tx, 4);
-			//SPI_RWx(a_buf_tx, a_buf_rx, a_buf_len, 2, NULL);
+	a_buf_tx[1] = NULL;
+	a_buf_rx[1] = pBuf;
+	a_buf_len[1] = bCnt;
 
-*/
+	SPI_FLASH_CS_LOW();
+	SPI_RWFX(a_buf_tx, a_buf_rx, a_buf_len, 2);
+
+	SPI_FLASH_CS_HIGH();
+
+/*
 	uint16_t i;
-			spi_buf_tx[0]=CMD_READ_DATA;
-			spi_buf_tx[1] = (uint8_t)(dwAddrRead >> 16); //третий байт адреса
-			spi_buf_tx[2] = (uint8_t)(dwAddrRead >> 8);	//второй байт адреса
-			spi_buf_tx[3] = (uint8_t)(dwAddrRead >> 0);
+	spi_buf_tx[0] = CMD_READ_DATA;
+	spi_buf_tx[1] = (uint8_t)(dwAddrRead >> 16); //третий байт адреса
+	spi_buf_tx[2] = (uint8_t)(dwAddrRead >> 8);	//второй байт адреса
+	spi_buf_tx[3] = (uint8_t)(dwAddrRead >> 0);
 
-
-
-			for( i=4;i<4+bCnt;i++){
-				spi_buf_tx[i]=0xff;
-			}
-			a_buf_rx[0] = pBuf;
-			SpiSendRecv(spi_buf_tx, a_buf_rx[0], i);
-
-
-		//	SPI_FLASH_CLOSE();
-
-	//		break;
-	//	}
-	//}
+	for( i=4; i<4+bCnt; i++)
+	{
+		spi_buf_tx[i] = 0x01;
+	}
+	a_buf_rx[0] = pBuf;
+	SPI_FLASH_CS_LOW();
+	SpiSendRecv(spi_buf_tx, a_buf_rx[0], i);
+	while(SpiActive){};*/
 }
 
 /********************************************************************/
@@ -149,57 +144,39 @@ static volatile uint32_t ulAgain = 0;
 uint8_t spiFlash_write( uint32_t dwAddrWrite, uint16_t bCnt, uint8_t* pBuf )
 {
 	uint8_t res = FLASH_RES_ERROR_AGAIN;
+	uint16_t i;
 
-	// ��������� ������
-	uint8_t i = FLASH_WE_ATTEMPTS;
-	uint8_t j = 0;
-	while (i && j < FLASH_WE_ATTEMPTS)	/// TODO: ������ ����� ��������� �� FLASH_RES_ERROR_AGAIN ? -> radio ����� �� ������� SPI
+	buf_txrx[0] = CMD_PAGE_PROGRAMM;
+	buf_txrx[1] = (uint8_t)(dwAddrWrite >> 16);
+	buf_txrx[2] = (uint8_t)(dwAddrWrite >> 8);
+	buf_txrx[3] = (uint8_t)(dwAddrWrite >> 0);
+	a_buf_tx[0] = buf_txrx;
+	a_buf_rx[0] = NULL;
+	a_buf_len[0] = 4;
+
+	a_buf_tx[1] = pBuf;
+	a_buf_rx[1] = NULL;
+	a_buf_len[1] = bCnt;
+
+	SPI_FLASH_CS_LOW();
+	SPI_RWFX(a_buf_tx, a_buf_rx, a_buf_len, 2);
+/*
+	spi_buf_tx[0]=CMD_PAGE_PROGRAMM;
+	spi_buf_tx[1]=(uint8_t)(dwAddrWrite>>16);
+	spi_buf_tx[2]=(uint8_t)(dwAddrWrite>>8);
+	spi_buf_tx[3]=(uint8_t)(dwAddrWrite>>0);
+	SPI_FLASH_CS_LOW();
+
+	for( i=4;i<4+bCnt;i++)
 	{
-		if (spiFlash_wrtEnbl() == FLASH_RES_ERROR_AGAIN)
-		{
-			j++;
-			continue;
-		}
-		else
-		{
-			if (spiFlash_readStatus() & REG_STATUS_WEL_MASK)
-				break;
-		}
-		i--;
+		spi_buf_tx[i]=0x66;
 	}
-	if (i == 0) // ��� � �� ������� ��������� ������?
-		res = (j == FLASH_WE_ATTEMPTS)? FLASH_RES_ERROR_AGAIN : FLASH_RES_ERROR_WRITE_ENABLE;	// FLASH_RES_ERROR_AGAIN � ������, ���� WE ��������� ������ FLASH_RES_ERROR_AGAIN
-	else
-	{
-      //  uint32_t ulTimeout = rtc_get_ticks();
-     //   while ( !systicks_isTimeout(ulTimeout, FL_IO_TO) )
-		{
-	//		if (SPI_FLASH_OPEN())
-			{
-				buf_txrx[0] = CMD_PAGE_PROGRAMM;		// ������� ������ ������
-				buf_txrx[1] = (uint8_t)(dwAddrWrite >> 16);
-				buf_txrx[2] = (uint8_t)(dwAddrWrite >> 8);
-				buf_txrx[3] = (uint8_t)(dwAddrWrite >> 0);
-				a_buf_tx[0] = buf_txrx;
-				a_buf_rx[0] = NULL;
-				a_buf_len[0] = 4;
-
-				a_buf_tx[1] = pBuf;
-				a_buf_rx[1] = NULL;
-				a_buf_len[1] = bCnt;
-
-				SPI_RWx(a_buf_tx, a_buf_rx, a_buf_len, 2, NULL);
-
-			//	SPI_FLASH_CLOSE();
-
-				res = FLASH_RES_OK;
-			//	break;
-			}
-		}
-	}
-
-	if (res == FLASH_RES_ERROR_AGAIN)
-		ulAgain++;
+	a_buf_rx[0] = pBuf;
+	SpiSendRecv(spi_buf_tx, a_buf_rx[0], i);
+	while(SpiActive);
+*/
+	SPI_FLASH_CS_HIGH();
+	res = FLASH_RES_OK;
 
 	return res;
 }
@@ -207,43 +184,18 @@ uint8_t spiFlash_write( uint32_t dwAddrWrite, uint16_t bCnt, uint8_t* pBuf )
 /********************************************************************/
 //        s25fl_readStatus - ������ �������� �������
 /********************************************************************/
-uint16_t spiFlash_readStatus1( void )
+uint16_t spiFlash_readStatus( uint8_t cmd )
 {
 	uint16_t bRegStatus;
 
-//	uint32_t ulTimeout = rtc_get_ticks();
-//	while ( !systicks_isTimeout(ulTimeout, FL_IO_TO) )
-	//{
-	//	if (SPI_FLASH_OPEN())
-		//{
-	/*
-			buf_txrx[0] = CMD_READ_STATUS_REG;		// ������� ������ �������� �������
-			buf_txrx[1] = 0xFF;
+	spi_buf_tx[0] = cmd;
+	spi_buf_tx[1] = 0xff;
 
-			SpiSendRecv(buf_txrx, buf_txrx, 2);
-
-		//	SPI_RW(buf_txrx, buf_txrx, 2, NULL);
-
-		//	SPI_FLASH_CLOSE();
-
-			bRegStatus = buf_txrx[1];
-
-*/
-
-			spi_buf_tx[0]=CMD_READ_STATUS_REG;
-			spi_buf_tx[1]=0xff;
-			spi_buf_tx[2]=0xff;
-
-			SpiSendRecv(spi_buf_tx, spi_buf_rx, 3);
-
-			bRegStatus=spi_buf_rx[0];
-			bRegStatus=bRegStatus<<8;
-			bRegStatus |=spi_buf_rx[1];
-
-
-		//	break;
-		//}
-//	}
+	SPI_FLASH_CS_LOW();
+	SpiSendRecv(spi_buf_tx, spi_buf_rx, 2);
+	while(SpiActive);
+	SPI_FLASH_CS_HIGH();
+	bRegStatus = spi_buf_rx[1];
 
 	return bRegStatus;
 }
@@ -252,24 +204,14 @@ uint8_t spiFlash_wrtEnbl()
 {
 	uint8_t res = FLASH_RES_ERROR_AGAIN;
 
-	// ��������� ������
-	//uint32_t ulTimeout = rtc_get_ticks();
-//	while ( !systicks_isTimeout(ulTimeout, FL_IO_TO) )
-//	{
-	//	if (SPI_FLASH_OPEN())
-	//	{
-			buf_txrx[0] = CMD_WRITE_ENABLE;
+	buf_txrx[0] = CMD_WRITE_ENABLE;
 
-			SpiSendRecv(buf_txrx, NULL, 1);
+	SPI_FLASH_CS_LOW();
+	SpiSendRecv(buf_txrx, NULL, 1);
+	while(SpiActive);
+	SPI_FLASH_CS_HIGH();
 
-		//	SPI_RW(buf_txrx, NULL, 1, NULL);
-
-		//	SPI_FLASH_CLOSE();
-
-			res = FLASH_RES_OK;
-		//	break;
-		//}
-	//}
+	res = FLASH_RES_OK;
 
 	return res;
 }
@@ -298,28 +240,32 @@ uint32_t spiFlash_readJEDECDesc( void )
 {
 	uint32_t result = 0;
 
-	uint32_t ulTimeout = rtc_get_ticks();
-	while ( !systicks_isTimeout(ulTimeout, FL_IO_TO) )
-	{
-		if (SPI_FLASH_OPEN())
-		{
-			buf_txrx[0] = 0x9F;		// ������� ������ �������� JEDEC
-			a_buf_tx[0] = buf_txrx;
-			a_buf_rx[0] = NULL;
-			a_buf_len[0] = 1;
+	buf_txrx[0] = 0x9F;
+	a_buf_tx[0] = buf_txrx;
+	a_buf_tx[0] = NULL;
+	a_buf_len[0] = 1;
 
-			a_buf_tx[1] = NULL;
-			a_buf_rx[1] = (uint8_t*)&result;
-			a_buf_len[1] = 3;
+	a_buf_tx[1] = NULL;
+	a_buf_rx[1] = (uint8_t*)&result;
 
-			SPI_RWx(a_buf_tx, a_buf_rx, a_buf_len, 2, NULL);
+	SPI_FLASH_CS_LOW();
+	SPI_RWFX(a_buf_tx, a_buf_rx, a_buf_len, 2);
+	/*
+	spi_buf_tx[0] = 0x9f;
+	spi_buf_tx[1] = 0xff;
+	spi_buf_tx[2] = 0xff;
+	spi_buf_tx[3] = 0xff;
 
-			SPI_FLASH_CLOSE();
+	SPI_FLASH_CS_LOW();
+	SpiSendRecv(spi_buf_tx, spi_buf_rx, 4);
+	while(SpiActive){};
 
-			break;
-		}
-	}
-
+	result = spi_buf_rx[1];
+	result = result << 8;
+	result |= spi_buf_rx[2];
+	result = result << 8;
+	result |= spi_buf_rx[3];
+*/
 	return result;
 }
 
@@ -330,48 +276,17 @@ uint8_t spiFlash_eraseSector( uint32_t dwSectAddr )
 {
 	uint8_t res = FLASH_RES_ERROR_AGAIN;
 
-	// ��������� ������
-	uint8_t i = FLASH_WE_ATTEMPTS;
-	uint8_t j = 0;
-	while (i && j < FLASH_WE_ATTEMPTS)
-	{
-		if (spiFlash_wrtEnbl() == FLASH_RES_ERROR_AGAIN)
-		{
-			j++;
-			continue;
-		}
-		else
-		{
-			if (spiFlash_readStatus() & REG_STATUS_WEL_MASK)
-				break;
-		}
-		i--;
-	}
-	if (i == 0) // ��� � �� ������� ��������� ������?
-		res = (j == FLASH_WE_ATTEMPTS)? FLASH_RES_ERROR_AGAIN : FLASH_RES_ERROR_WRITE_ENABLE;	// FLASH_RES_ERROR_AGAIN � ������, ���� WE ��������� ������ FLASH_RES_ERROR_AGAIN
-	else
-	{
-		// �������� ������� 4 ������
-	uint32_t ulTimeout = rtc_get_ticks();
-	while ( !systicks_isTimeout(ulTimeout, FL_IO_TO) )
-		{
-			if (SPI_FLASH_OPEN())
-			{
-				buf_txrx[0] = CMD_ERASE_4KB;		// ������� �������� �������
-				buf_txrx[1] = (uint8_t)(dwSectAddr >> 16);
-				buf_txrx[2] = (uint8_t)(dwSectAddr >> 8);
-				buf_txrx[3] = (uint8_t)(dwSectAddr >> 0);
+	buf_txrx[0] = CMD_ERASE_4KB;		// ������� �������� �������
+	buf_txrx[1] = (uint8_t)(dwSectAddr >> 16);
+	buf_txrx[2] = (uint8_t)(dwSectAddr >> 8);
+	buf_txrx[3] = (uint8_t)(dwSectAddr >> 0);
 
-				SPI_RW(buf_txrx, NULL, 4, NULL);
+	SPI_FLASH_CS_LOW();
+	SpiSendRecv(buf_txrx, NULL, 4);
+	while(SpiActive){};
+	SPI_FLASH_CS_HIGH();
 
-				SPI_FLASH_CLOSE();
-				res = FLASH_RES_OK;
-
-				break;
-			}
-		}
-	}
+	res = FLASH_RES_OK;
 
 	return res;
 }
-

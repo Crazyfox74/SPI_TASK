@@ -284,14 +284,16 @@ static inline void axsem_supplyRxOff()
 
 static inline void supply_flashOn()
 {
-    LL_GPIO_ResetOutputPin(BOARD_SPI_FLASH_GPIO, BOARD_SPI_FLASH_PIN);
+   // LL_GPIO_ResetOutputPin(BOARD_SPI_FLASH_GPIO, BOARD_SPI_FLASH_PIN);
+    LL_GPIO_ResetOutputPin(BOARD_RADIO_RX_GPIO, BOARD_RADIO_RX_PIN);
 
     flash_supplyOn = 1;
 }
 
 static inline void supply_flashOff()
 {
-    LL_GPIO_SetOutputPin(BOARD_SPI_FLASH_GPIO, BOARD_SPI_FLASH_PIN);
+  //  LL_GPIO_SetOutputPin(BOARD_SPI_FLASH_GPIO, BOARD_SPI_FLASH_PIN);
+    LL_GPIO_SetOutputPin(BOARD_RADIO_RX_GPIO, BOARD_RADIO_RX_PIN);
 
     flash_supplyOn = 0;
 }
@@ -320,7 +322,8 @@ static inline void SENS_SHUNT_2_OFF()  {LL_GPIO_ResetOutputPin(BOARD_SENS_SH_2_E
 #define PWR_RX_OFF()            axsem_supplyRxOff();
 #define PWR_RX_ON()				axsem_supplyRxOn();
 
-#define SPI_FLASH_PWR_OUT()     board_gpio_set_output(BOARD_SPI_FLASH_GPIO, BOARD_SPI_FLASH_PIN, LL_GPIO_PULL_NO, LL_GPIO_SPEED_FREQ_LOW);
+//#define SPI_FLASH_PWR_OUT()     board_gpio_set_output(BOARD_SPI_FLASH_GPIO, BOARD_SPI_FLASH_PIN, LL_GPIO_PULL_NO, LL_GPIO_SPEED_FREQ_LOW);
+#define SPI_FLASH_PWR_OUT()     board_gpio_set_output(BOARD_RADIO_RX_GPIO, BOARD_RADIO_RX_PIN, LL_GPIO_PULL_NO, LL_GPIO_SPEED_FREQ_LOW);
 #define SPI_FLASH_PWR_OFF()     supply_flashOff();      // off flash pwr
 #define SPI_FLASH_PWR_ON()      supply_flashOn();       // on flash pwr
 
