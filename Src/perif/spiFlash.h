@@ -40,9 +40,9 @@ void spiFlash_powerOn();
 void spiFlash_powerDown();
 void spiFlash_setCS(uint8_t bEnable);
 uint16_t spiFlash_readStatus( uint8_t cmd );
-void spiFlash_read( uint32_t dwAddrRead, uint16_t bCnt, uint8_t* pBuf );
-uint8_t spiFlash_write( uint32_t dwAddrWrite, uint16_t bCnt, uint8_t* pBuf );
-uint8_t spiFlash_eraseSector( uint32_t dwSectAddr );
+void spiFlash_read( uint32_t dwAddrRead, uint16_t bCnt, uint8_t* pBuf, uint8_t cmd );
+uint8_t spiFlash_write( uint32_t dwAddrWrite, uint16_t bCnt, uint8_t* pBuf, uint8_t cmd );
+uint8_t spiFlash_eraseSector( uint32_t dwSectAddr, uint8_t cmd );
 uint8_t spiFlash_wrtEnbl();
 
 uint32_t spiFlash_readJEDECDesc( void );

@@ -31,6 +31,8 @@ Src/main.o: ../Src/main.c \
  D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/FreeRTOS/Source/include/list.h \
  D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/FreeRTOS/Source/include/queue.h \
  D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/FreeRTOS/Source/include/task.h \
+ D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/FreeRTOS/Source/include/semphr.h \
+ D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/FreeRTOS/Source/include/queue.h \
  D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/Src/utils/delay.h \
  D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/Src/perif/spi.h \
  D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/Src/perif/board.h \
@@ -70,6 +72,8 @@ D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/FreeRTOS/Source/include/task.h:
 D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/FreeRTOS/Source/include/list.h:
 D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/FreeRTOS/Source/include/queue.h:
 D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/FreeRTOS/Source/include/task.h:
+D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/FreeRTOS/Source/include/semphr.h:
+D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/FreeRTOS/Source/include/queue.h:
 D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/Src/utils/delay.h:
 D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/Src/perif/spi.h:
 D:/Nero/SPI_TASK-branch_1/SPI_TASK-branch_1/Src/perif/board.h:

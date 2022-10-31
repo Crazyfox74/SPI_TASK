@@ -1,7 +1,7 @@
-../Src/perif/spi.c:152:6:SpiInit	16	static,ignoring_inline_asm
-../Src/perif/spi.c:197:6:SpiDeinit	8	static
-../Src/perif/spi.c:214:6:SpiSendRecv	4	static
-../Src/perif/spi.c:249:6:SpiBreak	8	static
-../Src/perif/spi.c:270:6:SpiSetPrescaler	0	static
-../Src/perif/spi.c:275:17:SpiIsReady	0	static
-../Src/perif/spi.c:281:6:SPI1_IRQHandler	8	static
+../Src/perif/spi.c:163:6:SpiInit	16	static,ignoring_inline_asm
+../Src/perif/spi.c:208:6:SpiDeinit	8	static
+../Src/perif/spi.c:225:6:SpiSendRecv	4	static
+../Src/perif/spi.c:263:6:SpiBreak	8	static
+../Src/perif/spi.c:284:6:SpiSetPrescaler	0	static
+../Src/perif/spi.c:289:17:SpiIsReady	0	static
+../Src/perif/spi.c:295:6:SPI1_IRQHandler	16	static

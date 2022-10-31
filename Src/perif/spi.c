@@ -3,12 +3,23 @@
 
 #include "spi_conf.h"
 
+
+
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "semphr.h"
+
 // SPI драйвер
 // SPI драйвер занимается только процессом приемопередачи байтов в/из SPI
 
 static LL_SPI_InitTypeDef SPI_InitStruct = { 0 };
 
 volatile uint8_t SpiActive;					// флаг активной передачи
+
+extern SemaphoreHandle_t SemaphoreFlash;
+
+BaseType_t err=pdTRUE;
 
 #ifndef SPI_DMA
 static uint8_t *pBufTx, *pBufRx;
@@ -214,6 +225,9 @@ void SpiDeinit()
 void SpiSendRecv(uint8_t *buf_tx, uint8_t *buf_rx, uint16_t len)
 {
 	SpiActive = 1;
+//	xSemaphoreTake(SemaphoreFlash,portMAX_DELAY);
+
+	//xSemaphoreTakeFromISR(SemaphoreFlash,pdTRUE);
 
 #ifndef SPI_DMA
 	pBufTx = buf_tx;
@@ -306,6 +320,7 @@ void SPI1_IRQHandler(void)
 	if (++usBufPosRx >= usBufCnt)
 	{
 		SpiActive = 0;
+		err=xSemaphoreGiveFromISR(SemaphoreFlash, NULL);
 	//	SPI_FLASH_CS_HIGH();
 		//SPI_ON_READY_ISR_CB(0);
 	}

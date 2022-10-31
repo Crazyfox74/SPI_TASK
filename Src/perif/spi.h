@@ -7,8 +7,14 @@
 //#define SPI_DMA
 #define	_SPI    SPI1
 
+#define CMD_WRITE_ENABLE					0x06
+#define CMD_PAGE_PROGRAMM					0x02
+#define CMD_RELEASE_POWER_DOWN				0xAB
 #define CMD_READ_STATUS_REG1				0x05
 #define CMD_READ_STATUS_REG2				0x35
+#define CMD_READ_DATA						0x03
+#define CMD_ERASE_4KB						0x20
+#define CMD_ERASE_64KB						0xd8
 
 void SpiInit();
 void SpiDeinit();
